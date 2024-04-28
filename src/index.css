@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Regular";
+  src: local("apercu-regular.ttf"),
+  url('./assets/fonts/apercu-regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: local("apercu-medium.ttf"),
+  url('./assets/fonts/apercu-medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: local("apercu-bold.ttf"),
+  url('./assets/fonts/apercu-bold.ttf') format("truetype");
+}
