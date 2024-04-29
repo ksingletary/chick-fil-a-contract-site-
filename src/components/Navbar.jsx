@@ -2,9 +2,15 @@ import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import pipe from '../assets/pipe-4.svg'
 import { FaBars, FaTimes } from "react-icons/fa";
+import location from '../assets/location.svg'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const [switchState, setSwitchState] = useState(["Capital Centre"]);
+
+    const handleChange = () => {
+        // complete later
+    }
 
     const handleOpen = () => {
         setOpen(!open);
@@ -18,11 +24,17 @@ const Navbar = () => {
           {/* Flex container to align logo and navigation */}
           <div className='flex justify-between items-center py-3'>
             {/* Logo section */}
-            <div className='flex-shrink-0'>  {/* Ensures the logo part doesn't grow or shrink */}
-              <a href="/">
-                <img src={logo} alt="logo" className='w-20 h-auto'/>  {/* h-auto ensures the height scales with the width */}
-              </a>
+            <div className='flex-shrink-0 flex items-center'>  {/* Adjusted to align items vertically centered */}
+                <a href="/" className='flex items-center space-x-3'> {/* Wrap logo and text in a link if necessary */}
+                    <img src={logo} alt="logo" className='w-20 h-auto'/> {/* Logo image */}
+                </a>
+                <button className='flex items-center space-x-2'> {/* Container for location icon and text */}
+                    <img src={pipe} alt="location icon" className='h-10 w-10'/>
+                    <img src={location} alt="location icon" className='h-10 w-10'/> {/* Location icon, adjust size as needed */}
+                    <span className='text-sm font-medium font-apercuRegular text-primary hover:underline'>Switch Stores</span> {/* Text next to the location icon */}
+                </button>
             </div>
+
 
             {/* Link section */}
             <div className='hidden lg:flex justify-between items-center gap-4'>
