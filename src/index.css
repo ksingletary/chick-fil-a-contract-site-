@@ -19,3 +19,11 @@
   src: local("apercu-bold.ttf"),
   url('./assets/fonts/apercu-bold.ttf') format("truetype");
 }
+
+@layer components {
+  .primary-btn {
+    @apply h-12 w-40 mx-auto lg:ml-0 px-6 py-3 cursor-pointer 
+    font-apercuMedium bg-primary hover:bg-red-800 transform 
+    ease-in-out duration-300 text-center text-white rounded-full shadow-xl;
+  }
+}
