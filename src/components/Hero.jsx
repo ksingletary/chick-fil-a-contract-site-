@@ -4,6 +4,7 @@ import uniform from '../assets/uniform.svg'
 import jobdescr from '../assets/jobdescr.svg'
 import card from '../assets/card.svg'
 import divider from '../assets/divider.svg'
+import largo from '../assets/largo.jpeg'
 
 const Hero = () => {
   return (
@@ -40,7 +41,7 @@ const Hero = () => {
 
                     {/* Image section */}
                     <div className='min-h-[450px] flex justify-center items-center relative order-1 sm:order-2'> 
-                        <img src={spicy} alt="spicy sandwhich" className='max-w-[450px] w-full mx-auto sm:scale-125 shadow-1' />
+                        <img src={largo} alt="spicy sandwhich" className='max-w-[450px] w-full mx-auto sm:scale-125 shadow-1 rounded-xl shadow-strong' />
                         
                     </div>
                 </div>
