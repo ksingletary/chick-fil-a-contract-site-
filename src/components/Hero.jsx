@@ -18,7 +18,7 @@ const Hero = () => {
                             Welcome
                             
                         </h1>
-                        <p className='text-md mt-6 font-apercuMedium text-gray-800'>
+                        <p className='text-md mt-6 font-apercuMedium text-secondary'>
                             {" "}Our Mission is to provide excellent food and excellent service with <span className='text-primary'>care</span>
                         </p>
                         <div className='flex items-center justify-center sm:justify-start gap-4'> {/* Aligns buttons next to each other */}

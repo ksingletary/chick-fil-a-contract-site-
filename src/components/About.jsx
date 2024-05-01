@@ -14,7 +14,7 @@ const About = () => {
                     </div>
                     {/* Text content section */}
                     <div className='flex flex-col justify-center gap-6 sm:pt-0'>
-                        <h1 className='text-4xl font-apercuBold text-gray-700'>Meet The Operator</h1>
+                        <h1 className='text-4xl font-apercuBold text-secondary'>Meet The Operator</h1>
                         <p className='text-gray-500  font-apercuMedium'>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                             Officiis perferendis laborum nisi eveniet dolore blanditiis 
@@ -33,7 +33,7 @@ const About = () => {
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
                     {/* Text content section */}
                     <div className='flex flex-col justify-center gap-6 sm:pt-0'>
-                        <h1 className='text-4xl font-apercuBold text-gray-700'>Serving with Southern Charm</h1>
+                        <h1 className='text-4xl font-apercuBold text-secondary'>Serving with Southern Charm</h1>
                         <p className='text-gray-500 font-apercuMedium'>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                             Officiis perferendis laborum nisi eveniet dolore blanditiis 
