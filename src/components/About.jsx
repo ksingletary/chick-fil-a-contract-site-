@@ -15,7 +15,7 @@ const About = () => {
                     {/* Text content section */}
                     <div className='flex flex-col justify-center gap-6 sm:pt-0'>
                         <h1 className='text-4xl font-apercuBold text-gray-700'>Meet The Operator</h1>
-                        <p className='text-gray-500 font-apercuMedium'>
+                        <p className='text-gray-500  font-apercuMedium'>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                             Officiis perferendis laborum nisi eveniet dolore blanditiis 
                             corporis modi, aut voluptate non obcaecati quia placeat tempora 
