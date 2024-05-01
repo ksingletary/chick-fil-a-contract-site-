@@ -15,7 +15,7 @@ const Catering = () => {
         alignItems: 'center'
     };
   return (
-    <div style={{ width: '100%', height: '100vh' }} className='mt-10'> 
+    <div style={{ width: '100%', height: '70vh' }} className='mt-10'> 
         <div style={backgroundImageStyle} className="flex items-center justify-end">  
             <div className='relative ml-auto mr-10 h-auto sm:h-72 w-full sm:w-2/5 bg-white p-4 rounded-3xl shadow-strong transition-shadow duration-300 ease-in-out'>
                 {/* <!-- SVG Icon positioned in the top right corner --> */}
