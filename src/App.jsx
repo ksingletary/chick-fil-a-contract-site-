@@ -24,7 +24,12 @@ const App = () => {
               <Footer />
             </>
           } />
-          <Route path="/process" element={<Process />} />
+          <Route path="/process" element={
+            <>
+              <Process />
+              <Footer />
+            </>
+          } />
         </Routes>
       </div>
     </Router>

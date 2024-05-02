@@ -30,13 +30,13 @@ const Navbar = () => {
 
                     <div className='hidden lg:flex w-full justify-between items-center text-lg'>
                         {/* Centered Links */}
-                        <div className='flex flex-grow justify-center mr-38'>
+                        <div className='flex flex-grow justify-center mr-56 '>
                             <Link to="/process" className='text-white font-apercuBold hover:text-primary mx-5'>Process</Link>
-                            <Link to="/growth" className='text-white font-apercuBold hover:text-primary mx-5'>Growth</Link>
-                            <Link to="/careers" className='text-white font-apercuBold hover:text-primary mx-5'>Careers</Link>
                             <Link to="/menu" className='text-white font-apercuBold hover:text-primary mx-5'>Menu</Link>
                             <Link to="/community" className='text-white font-apercuBold hover:text-primary mx-5'>Community</Link>
                             <Link to="/resources" className='text-white font-apercuBold hover:text-primary mx-5'>Resources</Link>
+                            <Link to="/referrals" className='text-white font-apercuBold hover:text-primary mx-5'>Referrals</Link>
+
                         </div>
                     </div>
 
@@ -60,7 +60,6 @@ const Navbar = () => {
                                 </div>
                                 <ul className='flex flex-col items-center justify-center space-y-10 mt-32 text-3xl'>
                                     <li><Link to="/process" className='text-primary hover:underline'>Process</Link></li>
-                                    <li><Link to="/growth" className='text-primary hover:underline'>Growth</Link></li>
                                     <li><Link to="/careers" className='text-primary hover:underline'>Careers</Link></li>
                                     <li><Link to="/menu" className='text-primary hover:underline'>Menu</Link></li>
                                     <li><Link to="/community" className='text-primary hover:underline'>Community</Link></li>
