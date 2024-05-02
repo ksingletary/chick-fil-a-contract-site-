@@ -1,5 +1,4 @@
 import React from 'react'
-import spicy from '../assets/spicy.png'
 import uniform from '../assets/uniform.svg'
 import jobdescr from '../assets/jobdescr.svg'
 import card from '../assets/card.svg'

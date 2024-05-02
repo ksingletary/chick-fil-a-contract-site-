@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import cfa from '../assets/cfa.svg';
 import { FaBars, FaTimes } from "react-icons/fa";
 import location from '../assets/location.svg';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -28,14 +30,13 @@ const Navbar = () => {
 
                     <div className='hidden lg:flex w-full justify-between items-center text-lg'>
                         {/* Centered Links */}
-                        <div className='flex flex-grow justify-center mr-48'>
-                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Process</a>
-                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Growth</a>
-                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Careers</a>
-                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Menu</a>
-                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Community</a>                            
-                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Resources</a>
-
+                        <div className='flex flex-grow justify-center mr-38'>
+                            <Link to="/process" className='text-white font-apercuBold hover:text-primary mx-5'>Process</Link>
+                            <Link to="/growth" className='text-white font-apercuBold hover:text-primary mx-5'>Growth</Link>
+                            <Link to="/careers" className='text-white font-apercuBold hover:text-primary mx-5'>Careers</Link>
+                            <Link to="/menu" className='text-white font-apercuBold hover:text-primary mx-5'>Menu</Link>
+                            <Link to="/community" className='text-white font-apercuBold hover:text-primary mx-5'>Community</Link>
+                            <Link to="/resources" className='text-white font-apercuBold hover:text-primary mx-5'>Resources</Link>
                         </div>
                     </div>
 
@@ -58,15 +59,15 @@ const Navbar = () => {
                                     </button>
                                 </div>
                                 <ul className='flex flex-col items-center justify-center space-y-10 mt-32 text-3xl'>
-                                    <li><a href="#" className='text-primary hover:underline'>Process</a></li>
-                                    <li><a href="#" className='text-primary hover:underline'>Growth</a></li>
-                                    <li><a href="#" className='text-primary hover:underline'>Careers</a></li>
-                                    <li><a href="#" className='text-primary hover:underline'>Menu</a></li>
-                                    {/* Community is where testimonials will go */}
-                                    <li><a href="#" className='text-primary hover:underline'>Community</a></li> 
-                                    <li><a href="#" className='text-primary hover:underline'>Resources</a></li> 
-                                    <li><a href="#" className='text-white bg-primary hover:bg-red-800 px-6 py-3 rounded-full shadow-xl'>Become A Leader</a></li>
+                                    <li><Link to="/process" className='text-primary hover:underline'>Process</Link></li>
+                                    <li><Link to="/growth" className='text-primary hover:underline'>Growth</Link></li>
+                                    <li><Link to="/careers" className='text-primary hover:underline'>Careers</Link></li>
+                                    <li><Link to="/menu" className='text-primary hover:underline'>Menu</Link></li>
+                                    <li><Link to="/community" className='text-primary hover:underline'>Community</Link></li>
+                                    <li><Link to="/resources" className='text-primary hover:underline'>Resources</Link></li>
+                                    <li><Link to="/leadership" className='text-white bg-primary hover:bg-red-800 px-6 py-3 rounded-full shadow-xl'>Become A Leader</Link></li>
                                 </ul>
+
                             </div>
                         )}
                     </div>

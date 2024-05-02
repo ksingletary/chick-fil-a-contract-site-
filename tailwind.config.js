@@ -11,12 +11,16 @@ export default {
       },
       colors: {
         primary: "#E51636",
-        secondary: "#004f71"
+        secondary: "#004f71",
+        footer: "#262626"
       },
       fontFamily:{
         apercuRegular: ['Regular'],
         apercuMedium: ['Medium'],
-        apercuBold: ['Bold']
+        apercuBold: ['Bold'],
+        CaeciliaLight: ['Light'],
+        CaeciliaSemi: ['Medium'],
+        CaeciliaBold: ['Bold']
       },
       container : {
         center: true,
