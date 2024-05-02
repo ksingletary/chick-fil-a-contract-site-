@@ -9,7 +9,7 @@ const Catering = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         width: '100%',
-        height: '70vh',  // Adjust the height as necessary
+        height: '70vh',  
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'

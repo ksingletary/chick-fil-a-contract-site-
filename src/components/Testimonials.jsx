@@ -38,7 +38,7 @@ const testimonialData = [
     },
     {
         id: 6,
-        name: "Terry Roberts",
+        name: "Terri Roberts",
         text: `More than just chicken! Their salads are surprisingly good, with fresh ingredients 
         and flavorful dressings.  It's a healthy and satisfying lunch option when I'm on the go. I will
         definitely visit Capital Centre again.`,

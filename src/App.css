@@ -1,0 +1,11 @@
+.background-image {
+  background-image: url('../assets/largo.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Transparent navbar */
+.nav-transparent {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent */
+  backdrop-filter: blur(5px); /* Optional: for blur effect */
+}

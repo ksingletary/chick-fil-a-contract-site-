@@ -1,86 +1,79 @@
 import React, { useState } from 'react';
-import logo from '../assets/logo.png';
-import pipe from '../assets/pipe-4.svg'
+import cfa from '../assets/cfa.svg';
 import { FaBars, FaTimes } from "react-icons/fa";
-import location from '../assets/location.svg'
+import location from '../assets/location.svg';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const [switchState, setSwitchState] = useState(["Capital Centre"]);
-
-    const handleChange = () => {
-        // complete later
-    }
 
     const handleOpen = () => {
         setOpen(!open);
     }
     const handleClose = () => setOpen(false);
-  return (
-    <>
-      <div className='bg-white shadow-lg'>
-        {/* Use max-w-7xl and mx-auto for centering and responsive width, px-4 for padding */}
-        <div className='container max-w-7xl px-4'>
-          {/* Flex container to align logo and navigation */}
-          <div className='flex justify-between items-center py-3'>
-            {/* Logo section */}
-            <div className='flex-shrink-0 flex items-center'>  {/* Adjusted to align items vertically centered */}
-                <a href="/" className='flex items-center space-x-3'> {/* Wrap logo and text in a link if necessary */}
-                    <img src={logo} alt="logo" className='w-20 h-auto'/> {/* Logo image */}
-                </a>
-                <button className='flex items-center space-x-2'> {/* Container for location icon and text */}
-                    <img src={pipe} alt="location icon" className='h-10 w-10'/>
-                    <img src={location} alt="location icon" className='h-10 w-10'/> {/* Location icon, adjust size as needed */}
-                    <span className='text-sm font-medium font-apercuRegular text-primary hover:underline'>Switch Stores</span> {/* Text next to the location icon */}
-                </button>
-            </div>
 
-
-            {/* Link section */}
-            <div className='hidden lg:flex justify-between items-center gap-4'>
-              <ul className='hidden lg:flex justify-between items-center gap-4 space-x-4'>  {/* Creates a horizontal list with space between items */}                
-                <li><a href="#" className='font-apercuMedium text-primary hover:underline '>Menu</a></li>
-                <li><a href="#" className='font-apercuMedium text-primary hover:underline '>Restaurant Vision</a></li>
-                <li><a href="#" className='font-apercuMedium text-primary hover:underline mr-60'>Careers</a></li>
-                <li><a className='h-11 w-10 mx-auto lg:ml-0 px-6 py-3 cursor-pointer font-apercuMedium bg-primary hover:bg-red-800 transform ease-in-out duration-300 text-center text-white rounded-full shadow-xl'>Become A Leader</a></li>
-              </ul>
-            </div>
-            {/* Responsive Menu for Mobile Device */}
-            <div className='lg:hidden'>
-                <button onClick={handleOpen}>
-                    <FaBars className='text-3xl font-apercuBold text-primary' />
-                </button>
-
-                {/* Dropdown menu */}
-                {open && (
-                    <div className='fixed inset-0 bg-white z-50'>
-                        {/* Top bar for logo and close icon */}
-                        <div className='flex justify-between items-center px-4 pt-4'>
-                            {/* Logo on the left */}
-                            <a href="/" className='flex-shrink-0'>
-                                <img src={logo} alt="logo" className='w-1/3 h-auto'/>
-                            </a>
-                            {/* Close button on the right */}
-                            <button onClick={handleClose} className=''>
-                                <FaTimes className='text-3xl text-primary' />
-                            </button>
-                        </div>
-
-                        {/* Menu items centered */}
-                        <ul className='flex flex-col items-center justify-center space-y-10 mt-32 text-3xl'>
-                            <li><a href="#" className='font-apercuMedium text-primary hover:underline'>Menu</a></li>
-                            <li><a href="#" className='font-apercuMedium text-primary hover:underline'>Restaurant Vision</a></li>
-                            <li><a href="#" className='font-apercuMedium text-primary hover:underline'>Careers</a></li>
-                            <li><a href="#" className='h-11 w-48 px-6 py-3 cursor-pointer font-apercuMedium bg-primary hover:bg-red-800 text-center text-white rounded-full shadow-xl'>Become A Leader</a></li>
-                        </ul>
+    return (
+        <>
+            <div className='nav-transparent top-0 left-0 w-full z-10'>
+                <div className='container max-w-7xl mx-auto px-4 py-3 flex justify-between items-center'>
+                    {/* Left side - Logo and Switch Stores button */}
+                    <div className='flex items-center space-x-3'>
+                        <a href="/" className='flex items-center'>
+                            <img src={cfa} alt="logo" className='w-20 h-auto'/>
+                        </a>
+                        <button className='flex items-center space-x-2'>
+                            <img src={location} alt="location icon" className='h-10 w-10'/>
+                            <span className='text-sm font-apercuBold text-primary hover:underline'>Capital Centre</span>
+                        </button>
                     </div>
-                )}
+
+                    <div className='hidden lg:flex w-full justify-between items-center text-lg'>
+                        {/* Centered Links */}
+                        <div className='flex flex-grow justify-center mr-48'>
+                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Process</a>
+                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Growth</a>
+                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Careers</a>
+                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Menu</a>
+                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Community</a>                            
+                            <a href="#" className='text-white font-apercuBold hover:text-primary mx-5'>Resources</a>
+
+                        </div>
+                    </div>
+
+
+                    {/* Mobile Menu Button */}
+                    <div className='lg:hidden'>
+                        <button onClick={handleOpen} className='text-3xl text-white'>
+                            <FaBars />
+                        </button>
+
+                        {/* Mobile Dropdown Menu */}
+                        {open && (
+                            <div className='fixed inset-0 bg-white z-50'>
+                                <div className='flex justify-between items-center px-4 pt-4'>
+                                    <a href="/" className='flex-shrink-0'>
+                                        <img src={cfa} alt="cfa logo" className='w-1/3 h-auto'/>
+                                    </a>
+                                    <button onClick={handleClose} className='text-3xl text-primary'>
+                                        <FaTimes />
+                                    </button>
+                                </div>
+                                <ul className='flex flex-col items-center justify-center space-y-10 mt-32 text-3xl'>
+                                    <li><a href="#" className='text-primary hover:underline'>Process</a></li>
+                                    <li><a href="#" className='text-primary hover:underline'>Growth</a></li>
+                                    <li><a href="#" className='text-primary hover:underline'>Careers</a></li>
+                                    <li><a href="#" className='text-primary hover:underline'>Menu</a></li>
+                                    {/* Community is where testimonials will go */}
+                                    <li><a href="#" className='text-primary hover:underline'>Community</a></li> 
+                                    <li><a href="#" className='text-primary hover:underline'>Resources</a></li> 
+                                    <li><a href="#" className='text-white bg-primary hover:bg-red-800 px-6 py-3 rounded-full shadow-xl'>Become A Leader</a></li>
+                                </ul>
+                            </div>
+                        )}
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </>
-  )
+        </>
+    );
 }
 
 export default Navbar;
