@@ -132,6 +132,40 @@ const Process = () => {
                 </div>
             </div>
         </div>
+        <div className='min-h-screen flex justify-center items-center sm:py-0 relative'>
+            <div className='absolute top-0 left-0 w-full h-36 flex justify-center items-center'>
+                <img src={divider} alt="Divider" />
+            </div>
+            <div className='container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+                    {/* Left Column for What to Bring */}
+                    <div className='mt-20'>
+                        <h1 className="text-3xl font-apercuBold text-secondary mb-4 text-center">What To Bring</h1>
+                        <ol className='list-decimal mt-9 font-apercuRegular pl-5 space-y-2'>
+                            <li className='text-gray-600'>ID: Passport Only or 2 other forms of identification: including Drivers License, Birth Certificate, or 
+                            Social Security card or permanent residence card. Make sure one of the ID's has a photo. View this list of other acceptable forms of ID for your I-9 paperwork.</li>
+                            <li className='text-gray-600'>Food Handlers Card, if you already have one. Either bring it with you or send it to this email.</li>
+                            <li className='text-gray-600'>If you are under 18 years of age, please bring in your work permit from your school.</li>
+                            {/* Add additional steps here */}
+                        </ol>
+                    </div>
+
+                    {/* Right Column for Location and Parking */}
+                    <div className='mt-20 relative'>
+                        <h1 className="text-3xl font-apercuBold text-secondary mb-4 text-center">Location and Parking</h1>
+                        <p className='font-apercuRegular text-gray-600'>Orientation will be held at the store: 1040 Shoppers Way, Largo, MD. Please park in the parking lot in front of the store.</p>
+                        {/* Placeholder for Google Maps */}
+                        <div className='w-full h-96 bg-gray-300'>
+                            {/* Simulation of a Google Maps placeholder */}
+                            <p className='text-center text-gray-500 pt-40'>Google Maps Placeholder</p>
+                        </div>
+                        <div className='absolute -bottom-28 -ml-72 left-0 w-full h-36 flex justify-center items-center'>
+                            <img src={divider} alt="Divider" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </>
   )

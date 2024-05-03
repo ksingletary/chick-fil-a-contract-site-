@@ -22,17 +22,20 @@ const Navbar = () => {
                         <a href="/" className='flex items-center'>
                             <img src={cfa} alt="logo" className='w-20 h-auto'/>
                         </a>
-                        <button className='flex items-center space-x-2'>
-                            <img src={location} alt="location icon" className='h-10 w-10'/>
+                        <button className='flex items-center'>
+                            <div className="bg-white rounded-full py-0 px-1 flex items-center justify-center"> {/* Adds white circle background */}
+                                <img src={location} alt="location icon" className='h-10 w-10'/> {/* Adjusted size inside the circle */}
+                            </div>
                             <span className='text-sm font-apercuBold text-primary hover:underline'>Capital Centre</span>
                         </button>
                     </div>
 
+
                     <div className='hidden lg:flex w-full justify-between items-center text-lg'>
                         {/* Centered Links */}
-                        <div className='flex flex-grow justify-center mr-56 '>
+                        <div className='flex flex-grow justify-center ml-96'>
                             <Link to="/process" className='text-white font-apercuBold hover:text-primary mx-5'>Process</Link>
-                            <Link to="/menu" className='text-white font-apercuBold hover:text-primary mx-5'>Menu</Link>
+                            <a href="https://www.chick-fil-a.com/locations/md/capital-centre" target="_blank" rel="noopener noreferrer" className='text-white font-apercuBold hover:text-primary mx-5'>Menu</a>
                             <Link to="/community" className='text-white font-apercuBold hover:text-primary mx-5'>Community</Link>
                             <Link to="/resources" className='text-white font-apercuBold hover:text-primary mx-5'>Resources</Link>
                             <Link to="/referrals" className='text-white font-apercuBold hover:text-primary mx-5'>Referrals</Link>
