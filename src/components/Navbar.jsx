@@ -35,11 +35,10 @@ const Navbar = () => {
                         {/* Centered Links */}
                         <div className='flex flex-grow justify-center ml-96'>
                             <Link to="/process" className='text-white font-apercuBold hover:text-primary mx-5'>Process</Link>
-                            <a href="https://www.chick-fil-a.com/locations/md/capital-centre" target="_blank" rel="noopener noreferrer" className='text-white font-apercuBold hover:text-primary mx-5'>Menu</a>
                             <Link to="/community" className='text-white font-apercuBold hover:text-primary mx-5'>Community</Link>
-                            <Link to="/resources" className='text-white font-apercuBold hover:text-primary mx-5'>Resources</Link>
+                            <a href="https://www.chick-fil-a.com/locations/md/capital-centre" target="_blank" rel="noopener noreferrer" className='text-white font-apercuBold hover:text-primary mx-5'>Menu</a>
                             <Link to="/referrals" className='text-white font-apercuBold hover:text-primary mx-5'>Referrals</Link>
-
+                            <Link to="/resources" className='text-white font-apercuBold hover:text-primary mx-5'>Resources</Link>
                         </div>
                     </div>
 

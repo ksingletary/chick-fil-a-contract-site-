@@ -8,6 +8,7 @@ import JoinUs from "./components/JoinUs";
 import Footer from "./components/Footer";
 import Process from "./components/NavLinks/Process";
 import Community from "./components/NavLinks/Community";
+import Referrals from "./components/NavLinks/Referrals";
 
 const App = () => {
   return (
@@ -34,6 +35,12 @@ const App = () => {
           <Route path="/community" element={
             <>
               <Community />
+              <Footer />
+            </>
+          } />
+          <Route path="/referrals" element={
+            <>
+              <Referrals />
               <Footer />
             </>
           } />

@@ -1,8 +1,34 @@
-import React from 'react'
+import {React, useState, useEffect} from 'react'
 import divider from '../../assets/divider.svg'
 import donation from '../../assets/donation.svg'
+import close from '../../assets/close.svg'
 
 const Community = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+
+    const closeModal = () => setIsModalOpen(false);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert("We're looking forward to serving you!")        
+        console.log("Form submitted!");
+        closeModal();
+    };
+
+    useEffect(() => {
+        if (isModalOpen) {
+            // Disable scrolling on the body
+            document.body.style.overflow = 'hidden';
+        }
+        return () => {
+            // Re-enable scrolling when the component is unmounted or modal is closed
+            document.body.style.overflow = 'unset';
+        };
+    }, [isModalOpen]);
+
   return (
     <>
         <div className='background-image-community min-h-screen flex justify-center items-center'>
@@ -36,10 +62,109 @@ const Community = () => {
             <h1 className='font-apercuBold text-5xl text-secondary -mt-16 text-center'> {/* Adjust top margin for proper spacing */}
                 Donation Requests
             </h1>
-            <button className='primary-btn mt-8 mx-auto'> {/* Center the button horizontally within the flex container */}
-                Click Here
+            <button onClick={openModal} className='primary-btn w-52 mt-8 mx-auto'> {/* Center the button horizontally within the flex container */}
+                Donation Request
             </button>
         </div>
+        {isModalOpen && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+                <div className="bg-white p-8 rounded-lg w-1/2 h-5/6 overflow-hidden relative">
+                    <div className="overflow-y-auto h-full">
+                        <h2 className="text-2xl font-bold mb-4 text-center">Donation Request Form</h2>
+                        <button onClick={closeModal}>
+                            <img src={close} alt="" className='h-4 w-4 absolute top-4 right-4'/>
+                        </button>
+                        <form onSubmit={handleSubmit} className="space-y-4">
+                            <input 
+                                type="text" 
+                                placeholder="Organization Full Name" 
+                                required className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="text" 
+                                placeholder="First Name" 
+                                required className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="text" 
+                                placeholder="Last Name" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="text" 
+                                placeholder="Address Line 1" 
+                                required className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="text" 
+                                placeholder="Address Line 2" 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="text" 
+                                placeholder="City" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="text"
+                                placeholder="State" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="text" 
+                                placeholder="ZIP Code" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="text" 
+                                placeholder="Name of Contact" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="tel" 
+                                placeholder="Contact Phone" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="email" 
+                                placeholder="Contact Email" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="text" 
+                                placeholder="Type of Group" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="text" 
+                                placeholder="Title of Event" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <input 
+                                type="date" 
+                                placeholder="Date of Event" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <textarea 
+                                placeholder="Description of Event" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md resize-none h-24" />
+                            <input 
+                                type="number" 
+                                placeholder="Expected Attendance" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                            <textarea 
+                                placeholder="How can we help?" 
+                                required 
+                                className="block w-full p-2 border border-gray-300 rounded-md resize-none h-24" />
+                            <div className="flex justify-center space-x-4 mt-4">
+                                <button type="submit" className="bg-primary hover:bg-red-800 text-white font-apercuMedium py-2 px-4 rounded">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        )}
+
 
     </>
   )
