@@ -1,7 +1,7 @@
 import {React, useState, useEffect} from 'react'
-import divider from '../../assets/divider.svg'
 import donation from '../../assets/donation.svg'
 import close from '../../assets/close.svg'
+import dividerLogo from '../../assets/dividerLogo.png'
 
 const Community = () => {
 
@@ -39,11 +39,11 @@ const Community = () => {
         <div className='relative -mt-8'>
             <div className='flex justify-center items-center mb-24'>
                 <div className="relative z-10">
-                    <h1 className='font-apercuBold text-primary text-7xl'>Chick-Fil-A <span className='text-secondary'>Capital Centre</span></h1>
+                    <h1 className='font-apercuBold text-primary text-7xl mt-48'>Chick-Fil-A <span className='text-secondary'>Capital Centre</span></h1>
                 </div>
             </div>
-            <div className='absolute top-0 left-0 w-full h-36 flex justify-center items-center mb-20'>
-                <img src={divider} alt="Divider" />
+            <div className='absolute top-0 left-0 ml-28 w-5/6 h-36 flex justify-center items-center -mt-10'>
+                <img src={dividerLogo} alt="Divider" />
             </div>
             <div className='flex justify-center flex-col ml-16 items-center mb-28'>
                 <h1 className='font-apercuBold text-5xl text-secondary my-2'>Marketing & Donations</h1>

@@ -15,12 +15,12 @@ export default {
         footer: "#262626"
       },
       fontFamily:{
-        apercuRegular: ['Regular'],
-        apercuMedium: ['Medium'],
-        apercuBold: ['Bold'],
-        CaeciliaLight: ['Light'],
-        CaeciliaSemi: ['Medium'],
-        CaeciliaBold: ['Bold']
+        apercuRegular: ['ApercuRegular'],
+        apercuMedium: ['ApercuMedium'],
+        apercuBold: ['Apercu'],
+        CaeciliaLight: ['CaeciliaLight'],
+        CaeciliaSemi: ['CaeciliaMedium'],
+        CaeciliaBold: ['CaeciliaBold']
       },
       container : {
         center: true,

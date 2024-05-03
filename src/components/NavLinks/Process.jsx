@@ -6,6 +6,8 @@ import checkmark from '../../assets/checkmark.svg'
 import handbook from '../../assets/handbook.png'
 import uniform from '../../assets/uniform.svg'
 import conduct from '../../assets/conduct.svg'
+import dividerLogo from '../../assets/dividerLogo.png'
+
 
 const Process = () => {
     const cathyImageStyle = {
@@ -71,11 +73,11 @@ const Process = () => {
         <div className='relative mt-20'>
             <div className='flex justify-center items-center mb-24'>
                 <div className="relative z-10">
-                    <h1 className='font-apercuBold text-primary text-7xl'>Chick-Fil-A <span className='text-secondary'>Capital Centre</span></h1>
+                    <h1 className='font-apercuBold text-primary text-7xl mt-48'>Chick-Fil-A <span className='text-secondary'>Capital Centre</span></h1>
                 </div>
             </div>
-            <div className='absolute top-0 left-0 w-full h-36 flex justify-center items-center mb-20'>
-                <img src={divider} alt="Divider" />
+            <div className='absolute top-0 left-0 ml-28 w-5/6 h-36 flex justify-center items-center mb-20'>
+                <img src={dividerLogo} alt="Divider" />
             </div>
             <div className='flex justify-center flex-col items-center mb-28'>
                 <h1 className='font-apercuBold text-6xl text-primary my-2'>Onboarding</h1>

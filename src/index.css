@@ -3,41 +3,41 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Regular";
-  src: local("apercu-regular.ttf"),
-  url('./assets/fonts/apercu-regular.ttf') format("truetype");
+  font-family: "ApercuRegular";
+  src: url('./assets/fonts/apercu-regular.ttf') format("truetype");
+  font-weight: lighter;
 }
 
 @font-face {
-  font-family: "Medium";
-  src: local("apercu-medium.ttf"),
-  url('./assets/fonts/apercu-medium.ttf') format("truetype");
+  font-family: "ApercuMedium";
+  src: url('./assets/fonts/apercu-medium.ttf') format("truetype");
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "Bold";
-  src: local("apercu-bold.ttf"),
-  url('./assets/fonts/apercu-bold.ttf') format("truetype");
+  font-family: "Apercu";
+  src: url('./assets/fonts/apercu-bold.ttf') format('truetype');
+  font-weight: bold;  /* Specify the font-weight this font face represents*/
+}
+
+
+@font-face {
+  font-family: "CaeciliaLight";
+  src: url('./assets/fonts/CaeciliaComLight.ttf') format("truetype");
+  font-weight: lighter;
 }
 
 @font-face {
-  font-family: "Light";
-  src: local("CaeciliaComLight.ttf"),
-  url('./assets/fonts/CaeciliaComLight.ttf') format("truetype");
+  font-family: "CaeciliaMedium";
+  src: url('./assets/fonts/CaeciliaComSemi.ttf') format("truetype");
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "Medium";
-  src: local("CaeciliaComSemi.ttf"),
-  url('./assets/fonts/CaeciliaComSemi.ttf') format("truetype");
+  font-family: "CaeciliaBold";
+  src: url('./assets/fonts/CaeciliaComBold.ttf') format("truetype");
+  font-weight: bold;
 }
-
-@font-face {
-  font-family: "Bold";
-  src: local("CaeciliaComBold.ttf"),
-  url('./assets/fonts/CaeciliaComBold.ttf') format("truetype");
-}
-
 
 @layer components {
   .primary-btn {

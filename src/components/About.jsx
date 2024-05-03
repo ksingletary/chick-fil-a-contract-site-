@@ -3,6 +3,7 @@ import AboutImg from '../assets/operator.jpeg';
 import ServingImg from '../assets/serving.jpeg';
 import divider from '../assets/divider.svg'
 import located from '../assets/located.jpeg'
+import dividerLogo from '../assets/dividerLogo.png'
 
 const About = () => {
   return (
@@ -12,15 +13,15 @@ const About = () => {
                 <div className='relative'>
                     <div className='flex justify-center items-center mb-24'>
                         <div className="relative z-10">
-                            <h1 className='font-apercuBold text-primary text-7xl'>Chick-Fil-A <span className='text-secondary'>Capital Centre</span></h1>
+                            <h1 className='font-apercuBold text-primary text-7xl mt-44'>Chick-Fil-A <span className='text-secondary font-apercuBold'>Capital Centre</span></h1>
                         </div>
                     </div>
                     <div className='absolute top-0 left-0 w-full h-36 flex justify-center items-center mb-20'>
-                        <img src={divider} alt="Divider" />
+                        <img src={dividerLogo} alt="Divider" />
                     </div>
-                    <div className='flex justify-center flex-col items-center mb-28'>
-                        <h1 className='font-apercuBold text-xl text-gray-600 my-2'>THE SHARED VISION OF CHICK-FIL-A AND CHICK-FIL-A Capital Centre/Steeplechase</h1>
-                        <h2 className='font-apercuRegular text-xl text-gray-600 my-2'>To be the World’s Most <span className='font-apercuBold text-primary'>Caring</span> Company by Winning Hearts Everyday</h2>
+                    <div className='flex justify-center flex-col items-center  mb-20'>
+                        <h1 className='font-apercuBold text-xl text-gray-600 '>THE SHARED VISION OF CHICK-FIL-A AND CHICK-FIL-A Capital Centre/Steeplechase</h1>
+                        <h2 className='font-apercuRegular text-xl text-gray-600 '>To be the World’s Most <span className='font-apercuBold text-primary'>Caring</span> Company by Winning Hearts Everyday</h2>
 
                     </div>
 
