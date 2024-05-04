@@ -42,7 +42,7 @@ const About = () => {
                         <img src={ServingImg} alt="cfa image" className='max-w-[750px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
                     </div>
                     {/* Text content section */}
-                    <div className='flex flex-col justify-center gap-6 sm:pt-0'>
+                    <div className='flex flex-col justify-center gap-6 sm:pt-0 ml-10'>
                         {/* Header Image */}
                         <h1 className='text-4xl font-apercuBold text-secondary'>Our Vision</h1>
                         <p className='text-gray-500  font-apercuMedium'>

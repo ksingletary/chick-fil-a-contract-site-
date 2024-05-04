@@ -33,7 +33,7 @@ const Referrals = () => {
     <>
         <div className='background-image-referrals min-h-screen flex justify-center items-center'>
             <div className='container text-center'>
-                <h1 className='text-9xl font-apercuBold mb-14 text-white'>Refer A Friend</h1>
+                <h1 className='text-8xl font-apercuBold mb-14 text-white'>Refer A Friend</h1>
             </div>
         </div>
         <div className='relative -mt-20'> {/* Added padding-top instead of negative margin-top */}

@@ -36,7 +36,7 @@ const Process = () => {
                     <img src={operator} alt="cfa image" className='max-w-[750px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
                 </div>
                 {/* Text content section */}
-                <div className='flex flex-col justify-center gap-6 mb-40'>
+                <div className='flex flex-col justify-center gap-6 mb-40 ml-10'>
                     <h1 className='text-3xl font-apercuBold text-secondary'>Meet The Owner</h1>
                     <p className='text-gray-500 font-apercuMedium'>
                     Welcome to Chick-fil-A Cap Centre/Steeplechase! We're thrilled to have you join our team. We strive to be Maryland's beacon of hospitality, 

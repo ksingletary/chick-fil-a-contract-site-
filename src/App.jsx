@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Process from "./components/NavLinks/Process";
 import Community from "./components/NavLinks/Community";
 import Referrals from "./components/NavLinks/Referrals";
+import Menu from "./components/NavLinks/Menu";
 
 const App = () => {
   return (
@@ -41,6 +42,12 @@ const App = () => {
           <Route path="/referrals" element={
             <>
               <Referrals />
+              <Footer />
+            </>
+          } />
+          <Route path="/menu" element={
+            <>
+              <Menu />
               <Footer />
             </>
           } />
