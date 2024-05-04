@@ -4,30 +4,38 @@ import ServingImg from '../assets/serving.jpeg';
 import divider from '../assets/divider.svg'
 import located from '../assets/located.jpeg'
 import dividerLogo from '../assets/dividerLogo.png'
+import cherryberry from '../assets/cherryberry.jpeg'
+
 
 const About = () => {
   return (
     <>
-        <div className='min-h-[620px] flex justify-center items-center py-12 sm:py-0'>
+        <div className='min-h-[250px] flex justify-center items-center py-20 sm:py-0 mt-14'>
             <div className='container'>
-                <div className='relative'>
-                    <div className='flex justify-center items-center mb-24'>
-                        <div className="relative z-10">
-                            <h1 className='font-apercuBold text-primary text-7xl mt-44'>Chick-Fil-A <span className='text-secondary font-apercuBold'>Capital Centre</span></h1>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+                    {/* Text content section */}
+                    <div className='flex flex-col justify-center gap-6 sm:pt-0'>
+                        <h1 className='text-4xl font-apercuBold text-secondary'>Sip into spring with our seasonal Cherry Berry beverage lineup. Which ones will you choose?</h1>
+                        <p className='text-gray-500 font-apercuMedium'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Officiis perferendis laborum nisi eveniet dolore blanditiis 
+                            corporis modi, aut voluptate non obcaecati quia placeat tempora 
+                            veniam odio sint ut iure autem! lo
+                        </p>
+                        <p className='text-secondary font-apercuBold'>Download the Chick-fil-A app and order today.</p>
+                        <div className=''>
+                            <button className='primary-btn w-52 '>Order Now!</button>
                         </div>
                     </div>
-                    <div className='absolute top-0 left-0 w-full h-36 flex justify-center items-center mb-20'>
-                        <img src={dividerLogo} alt="Divider" />
+                    {/* image section */}
+                    <div className='flex justify-center items-center'>
+                        <img src={cherryberry} alt="located map image" className='max-w-[750px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
                     </div>
-                    <div className='flex justify-center flex-col items-center  mb-20'>
-                        <h1 className='font-apercuBold text-xl text-gray-600 '>THE SHARED VISION OF CHICK-FIL-A AND CHICK-FIL-A Capital Centre/Steeplechase</h1>
-                        <h2 className='font-apercuRegular text-xl text-gray-600 '>To be the World’s Most <span className='font-apercuBold text-primary'>Caring</span> Company by Winning Hearts Everyday</h2>
-
-                    </div>
-
                 </div>
-
-
+            </div>
+        </div>
+        <div className='min-h-[620px] flex justify-center items-center py-12 sm:py-0'>
+            <div className='container'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
                     {/* image section */}
                     <div className='flex justify-center items-center'>

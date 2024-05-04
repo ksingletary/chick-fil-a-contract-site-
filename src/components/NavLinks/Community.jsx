@@ -2,6 +2,13 @@ import {React, useState, useEffect} from 'react'
 import donation from '../../assets/donation.svg'
 import close from '../../assets/close.svg'
 import dividerLogo from '../../assets/dividerLogo.png'
+import location from '../../assets/location.svg';
+import mobile from '../../assets/mobile.svg'
+import pickup from '../../assets/pickup.svg'
+import pickup1 from '../../assets/pickup1.svg'
+import catering from '../../assets/catering.svg'
+import catering1 from '../../assets/catering-icon.svg'
+import dinein from '../../assets/dine-in.svg'
 
 const Community = () => {
 
@@ -164,6 +171,81 @@ const Community = () => {
                 </div>
             </div>
         )}
+        <div className='min-h-[720px] bg-gray-100 flex items-center justify-center'> {/* Flexbox for vertical centering */}
+            <div className='container flex justify-between mt-10 w-full px-10'> {/* Flex container for both sides */}
+                
+                {/* Left Side - Capital Centre */}
+                <div className='flex flex-col w-1/2 pr-8'> {/* Half width with padding to separate the columns */}
+                    <div className="bg-gray-300 rounded-full w-24 h-24 flex items-center justify-center mb-4"> {/* Adjusted circle size and added margin-bottom */}
+                        <img src={location} alt="Capital Centre location icon" className='h-full w-full'/> 
+                    </div>
+                    <h1 className='font-apercuBold text-secondary text-5xl mb-10'>
+                        Capital Centre
+                    </h1>
+                    <p className='font-apercuRegular text-gray-600 text-lg mb-16'>
+                        1040 Shoppers Way<br/>Largo, MD 20774
+                    </p>
+
+                    <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>HOURS:</h2>
+                    <p className='font-apercuRegular text-lg text-gray-600 mb-16'>
+                        Monday - Saturday: 6:00 AM-10:00 PM EST <br /> Sunday: Closed
+                    </p>
+                    <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>AMENITIES AT THIS RESTAURANT</h2>
+                    <p className='font-apercuRegular text-gray-600 mb-16'>
+                        Mobile Ordering, Drive-thru, Catering Pickup, Catering Delivery, WiFi, Breakfast
+                    </p>
+                    <div className='flex flex-row space-x-6 '>
+                        <img src={mobile} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={pickup} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={pickup1} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={catering} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={catering1} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={dinein} alt="" className='h-16 w-16 -mt-12 '/>
+
+                    </div>
+                    <h2 className='font-CaeciliaSemi text-gray-600 text-md mt-6 mb-4'>SERVICE OPTIONS</h2>
+                    <p className='font-apercuRegular text-gray-600 mb-16'>
+                        Drive-thru, Carry-out, Curbside, Dine-in, Delivery, DoorDash
+                    </p>
+                    <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>PHONE NUMBER:</h2>
+                    <p className='font-apercuRegular underline text-primary mb-4'>
+                        (301) 555-0186
+                    </p>
+                </div>
+
+                {/* Right Side - Steeplechase */}
+                <div className='flex flex-col w-1/2 pr-8 ml-40'> {/* Half width with padding to separate the columns */}
+                    <div className="bg-gray-300 rounded-full w-24 h-24 flex items-center justify-center mb-4"> {/* Adjusted circle size and added margin-bottom */}
+                        <img src={location} alt="Capital Centre location icon" className='h-full w-full'/> 
+                    </div>
+                    <h1 className='font-apercuBold text-secondary text-5xl mb-10'>
+                        Steeplechase
+                    </h1>
+                    <p className='font-apercuRegular text-gray-600 text-lg mb-16'>
+                        9121 Alaking Ct <br /> Capitol Heights, MD 20743
+                    </p>
+
+                    <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>HOURS:</h2>
+                    <p className='font-apercuRegular text-lg text-gray-600 mb-16'>
+                        Monday - Saturday: 6:00 AM-10:00 PM EST <br /> Sunday: Closed
+                    </p>
+                    <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>AMENITIES AT THIS RESTAURANT</h2>
+                    <p className='font-apercuRegular text-gray-600 mb-16'>
+                        Mobile Ordering, Drive-thru, Catering Pickup, Catering Delivery, WiFi, Breakfast
+                    </p>
+                    <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>SERVICE OPTIONS</h2>
+                    <p className='font-apercuRegular text-gray-600 mb-16'>
+                        Drive-thru, Carry-out, Curbside, Dine-in, Delivery, DoorDash
+                    </p>
+                    <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>PHONE NUMBER:</h2>
+                    <p className='font-apercuRegular underline text-primary mb-4'>
+                        (301) 555-0186
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
 
 
     </>

@@ -20,13 +20,10 @@ const Navbar = () => {
                     {/* Left side - Logo and Switch Stores button */}
                     <div className='flex items-center space-x-3'>
                         <a href="/" className='flex items-center'>
-                            <img src={cfa} alt="logo" className='w-20 h-auto'/>
+                            <img src={cfa} alt="logo" className='w-28 h-auto'/>
                         </a>
-                        <button className='flex items-center'>
-                            <div className="bg-white rounded-full py-0 px-1 flex items-center justify-center"> {/* Adds white circle background */}
-                                <img src={location} alt="location icon" className='h-10 w-10'/> {/* Adjusted size inside the circle */}
-                            </div>
-                            <span className='text-sm font-apercuBold text-primary hover:underline'>Capital Centre</span>
+                        <button className='flex items-center '>
+                            <span className='text-sm font-apercuBold text-primary hover:underline mr-2'>Capital Centre</span>
                         </button>
                     </div>
 

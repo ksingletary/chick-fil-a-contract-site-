@@ -1,10 +1,19 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import cfa from '../assets/cfa.svg'
 
 const Footer = () => {
     return (
         <footer className="bg-footer text-white py-6 ">
             <div className="text-center space-y-12">
+                <div className='flex items-center space-x-3'>
+                    <a href="/" className='flex items-center'>
+                        <img src={cfa} alt="logo" className='w-28 h-auto'/>
+                    </a>
+                    <button className='flex items-center '>
+                        <span className='text-sm font-apercuBold text-primary hover:underline mr-2'>Capital Centre</span>
+                    </button>
+                </div>
                 {/* Connect With Us */}
                 <div className="">
                     <h3 className="text-lg font-CaeciliaBold mb-3">CONNECT WITH US</h3>

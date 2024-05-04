@@ -30,19 +30,14 @@ const Process = () => {
         </div>
         {/* Subsequent content moved closer to the background section */}
         <div className='container -mt-20'> {/* Adjust negative margin to reduce gap */}
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 mt-20'>
                 {/* Image section */}
                 <div className='flex flex-col justify-center items-center mb-32'>
                     <img src={operator} alt="cfa image" className='max-w-[750px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
-                    <div className='flex items-center mt-2'>
-                        {/* SVG icon */}
-                        <img src={uniform} alt="Icon" className="h-16 w-16 mr-2 mt-10"/>
-                        <span className="text-2xl font-apercuBold text-secondary mt-10">Restaurant Operator</span>
-                    </div>
                 </div>
                 {/* Text content section */}
-                <div className='flex flex-col justify-center gap-6 mb-48'>
-                    <h1 className='text-3xl font-apercuBold text-secondary'>Thank you for choosing to be an integral part of Chick-fil-A Capital Centre/Steeplechase.</h1>
+                <div className='flex flex-col justify-center gap-6 mb-40'>
+                    <h1 className='text-3xl font-apercuBold text-secondary'>Meet The Owner</h1>
                     <p className='text-gray-500 font-apercuMedium'>
                     Welcome to Chick-fil-A Cap Centre/Steeplechase! We're thrilled to have you join our team. We strive to be Maryland's beacon of hospitality, 
                     and that starts with developing servant leaders like you. Your dedication and passion will be key to achieving that goal.
