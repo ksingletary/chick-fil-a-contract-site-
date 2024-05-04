@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Hero from "./components/Hero";
-import About from "./components/About";
-import Catering from "./components/Catering";
+import HomeMid from "./components/HomeMid";
+import HomeCatering from "./components/HomeCatering";
 import Testimonials from "./components/Testimonials";
 import JoinUs from "./components/JoinUs";
 import Footer from "./components/Footer";
@@ -10,6 +10,7 @@ import Process from "./components/NavLinks/Process";
 import Community from "./components/NavLinks/Community";
 import Referrals from "./components/NavLinks/Referrals";
 import Menu from "./components/NavLinks/Menu";
+import Catering from "./components/NavLinks/Catering"
 
 const App = () => {
   return (
@@ -20,8 +21,8 @@ const App = () => {
           <Route path="/" element={
             <>
               <Hero />
-              <About />
-              <Catering />
+              <HomeMid />
+              <HomeCatering />
               <Testimonials />
               <JoinUs />
               <Footer />
@@ -48,6 +49,12 @@ const App = () => {
           <Route path="/menu" element={
             <>
               <Menu />
+              <Footer />
+            </>
+          } />
+          <Route path="/catering" element={
+            <>
+              <Catering />
               <Footer />
             </>
           } />

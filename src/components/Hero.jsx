@@ -1,8 +1,4 @@
 import React from 'react'
-import uniform from '../assets/uniform.svg'
-import jobdescr from '../assets/jobdescr.svg'
-import card from '../assets/card.svg'
-import divider from '../assets/divider.svg'
 
 const Hero = () => {
     

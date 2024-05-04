@@ -35,11 +35,11 @@ const Navbar = () => {
                             <Link to="/process" className='text-white font-apercuRegular hover:text-primary mx-5'>Process</Link>
                             <Link to="/community" className='text-white font-apercuRegular hover:text-primary mx-5'>Community</Link>
                             <Link to="/menu" className='text-white font-apercuRegular hover:text-primary mx-5'>Menu</Link>
-                            <Link to="/catering" className='text-white font-apercuRegular ml-8 hover:text-primary mx-5'>Catering</Link>
+                            <Link to="/catering" className='text-white font-apercuRegular hover:text-primary mx-5'>Catering</Link>
                             <div className="relative z-10">
                                 {/* Ensuring there's no gap between the button and dropdown */}
                                 <div onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
-                                    <button className='text-white w-20 pb-2 font-apercuRegular hover:text-primary mx-5'>
+                                    <button className='text-white w-20 pb-2 font-apercuRegular hover:text-primary mx-4'>
                                         About Us
                                     </button>
                                     {dropdownOpen && (
