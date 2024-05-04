@@ -4,9 +4,9 @@ import cathy from '../../assets/cathy.jpeg'
 import divider from '../../assets/divider.svg'
 import checkmark from '../../assets/checkmark.svg'
 import handbook from '../../assets/handbook.png'
-import uniform from '../../assets/uniform.svg'
 import conduct from '../../assets/conduct.svg'
 import dividerLogo from '../../assets/dividerLogo.png'
+import cfaone2 from '../../assets/cfaone2.jpeg'
 
 
 const Process = () => {
@@ -148,6 +148,27 @@ const Process = () => {
                             {/* Simulation of a Google Maps placeholder */}
                             <p className='text-center text-gray-500 pt-40'>Google Maps Placeholder</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className='min-h-[620px] flex justify-center items-center py-20 sm:py-0 -mt-10'>
+            <div className='container'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+                    {/* Text content section */}
+                    <div className='flex flex-col justify-center gap-6 sm:pt-0'>
+                        <h1 className='text-4xl font-apercuBold text-secondary'>Every Bite Counts! Earn Free Rewards with Chick-fil-A One</h1>
+                        <p className='text-gray-500 font-apercuMedium'>
+                        Stop waiting in line, start earning rewards! Download the Chick-fil-A One App and order your favorite meals ahead of time. 
+                        Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
+                        </p>
+                        <div className='mt-6'>
+                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
+                        </div>
+                    </div>
+                    {/* image section */}
+                    <div className='flex justify-center items-center'>
+                        <img src={cfaone2} alt="located map image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
                     </div>
                 </div>
             </div>

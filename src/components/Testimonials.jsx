@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import cow from "../assets/cow.svg"
 import cfaone from '../assets/cfaone.jpeg'
+import cfaone1 from '../assets/cfaone1.jpeg'
 
 
 const testimonialData = [
@@ -132,7 +133,7 @@ const Testimonials = () => {
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={cfaone} alt="located map image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <img src={cfaone1} alt="located map image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
                     </div>
                 </div>
             </div>

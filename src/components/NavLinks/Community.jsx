@@ -11,6 +11,7 @@ import catering1 from '../../assets/catering-icon.svg'
 import dinein from '../../assets/dine-in.svg'
 import lovecommunity from '../../assets/lovecommunity.jpeg'
 import doordash from '../../assets/doordash.png'
+import cfaone3 from '../../assets/cfaone3.png'
 
 const Community = () => {
 
@@ -215,7 +216,7 @@ const Community = () => {
                     <p className='font-apercuRegular text-gray-600 mb-16'>
                         Mobile Ordering, Drive-thru, Catering Pickup, Catering Delivery, WiFi, Breakfast
                     </p>
-                    <div className='flex flex-row space-x-6 '>
+                    <div className='flex flex-row space-x-6 -ml-6'>
                         <img src={mobile} alt="" className='h-16 w-16 -mt-12 '/>
                         <img src={pickup} alt="" className='h-16 w-16 -mt-12 '/>
                         <img src={pickup1} alt="" className='h-16 w-16 -mt-12 '/>
@@ -223,8 +224,6 @@ const Community = () => {
                         <img src={catering1} alt="" className='h-16 w-16 -mt-12 '/>
                         <img src={dinein} alt="" className='h-16 w-16 -mt-12 '/>
                         <img src={doordash} alt="" className='h-16 w-16 -mt-12 '/>
-
-
                     </div>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mt-6 mb-4'>SERVICE OPTIONS</h2>
                     <p className='font-apercuRegular text-gray-600 mb-16'>
@@ -256,7 +255,16 @@ const Community = () => {
                     <p className='font-apercuRegular text-gray-600 mb-16'>
                         Mobile Ordering, Drive-thru, Catering Pickup, Catering Delivery, WiFi, Breakfast
                     </p>
-                    <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>SERVICE OPTIONS</h2>
+                    <div className='flex flex-row space-x-6 -ml-6 '>
+                        <img src={mobile} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={pickup} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={pickup1} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={catering} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={catering1} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={dinein} alt="" className='h-16 w-16 -mt-12 '/>
+                        <img src={doordash} alt="" className='h-16 w-16 -mt-12 '/>
+                    </div>
+                    <h2 className='font-CaeciliaSemi text-gray-600 text-md mt-6 mb-4'>SERVICE OPTIONS</h2>
                     <p className='font-apercuRegular text-gray-600 mb-16'>
                         Drive-thru, Carry-out, Curbside, Dine-in, Delivery, DoorDash
                     </p>
@@ -267,9 +275,27 @@ const Community = () => {
                 </div>
             </div>
         </div>
-
-
-
+        <div className='min-h-[620px] flex justify-center items-center py-20 sm:py-0 -mt-10'>
+            <div className='container'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+                    {/* Text content section */}
+                    <div className='flex flex-col justify-center gap-6 sm:pt-0'>
+                        <h1 className='text-4xl font-apercuBold text-secondary'>Every Bite Counts! Earn Free Rewards with Chick-fil-A One</h1>
+                        <p className='text-gray-500 font-apercuMedium'>
+                        Stop waiting in line, start earning rewards! Download the Chick-fil-A One App and order your favorite meals ahead of time. 
+                        Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
+                        </p>
+                        <div className='mt-6'>
+                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
+                        </div>
+                    </div>
+                    {/* image section */}
+                    <div className='flex justify-center items-center'>
+                        <img src={cfaone3} alt="located map image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </>
   )

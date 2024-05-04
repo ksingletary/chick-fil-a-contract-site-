@@ -31,25 +31,29 @@ const Navbar = () => {
 
                     <div className='hidden lg:flex w-full justify-between items-center text-md '>
                         {/* Centered Links */}
-                        <div className='flex flex-grow justify-center ml-80'>
+                        <div className='flex flex-grow justify-center ml-72'>
                             <Link to="/process" className='text-white font-apercuRegular hover:text-primary mx-5'>Process</Link>
                             <Link to="/community" className='text-white font-apercuRegular hover:text-primary mx-5'>Community</Link>
                             <Link to="/menu" className='text-white font-apercuRegular hover:text-primary mx-5'>Menu</Link>
-                            <Link to="/referrals" className='text-white font-apercuRegular hover:text-primary mx-5'>Referrals</Link>
+                            <Link to="/catering" className='text-white font-apercuRegular ml-8 hover:text-primary mx-5'>Catering</Link>
                             <div className="relative z-10">
-                                <button className='text-white w-20 font-apercuRegular hover:text-primary mx-5' onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
-                                    About Us
-                                </button>
-                                {dropdownOpen && (
-                                    <div className="absolute top-full mt-2 bg-white shadow-md rounded-lg w-48">
-                                        <Link to="/mission" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:bg-gray-100'>About Us</Link>
-                                        <Link to="/team" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:bg-gray-100'>Contact</Link>
-                                        <Link to="/history" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:bg-gray-100'>Resources</Link>
-                                    </div>
-                                )}
+                                {/* Ensuring there's no gap between the button and dropdown */}
+                                <div onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
+                                    <button className='text-white w-20 pb-2 font-apercuRegular hover:text-primary mx-5'>
+                                        About Us
+                                    </button>
+                                    {dropdownOpen && (
+                                        <div className="absolute top-8 left-0 bg-white shadow-md rounded-lg w-48">
+                                            <Link to="/mission" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:text-gray-500'>About Our Stores</Link>
+                                            <Link to="/contact" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:text-gray-500'>Contact</Link>
+                                            <Link to="/referrals" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:text-gray-500'>Referrals</Link>
+                                            <Link to="/resources" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:text-gray-500'>Resources</Link>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
-                        <Link to="/download-cfa-one" className='primary-btn hover:bg-primary-dark text-white font-apercuRegular w-44 py-3 px-4 rounded-full'>
+                        <Link to="/download-cfa-one" className='primary-btn mb-2 hover:bg-primary-dark text-white font-apercuRegular w-44 py-3 px-4 rounded-full'>
                             Download CFA One
                         </Link>
                     </div>
