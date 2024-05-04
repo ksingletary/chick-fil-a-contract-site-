@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      filter: { // ensure you enable filters if not already enabled
+      'none': 'none',
+      'brightness-50': 'brightness(50%)',
+    },
       boxShadow: {
         'strong': '0 4px 6px 4px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)'
       },

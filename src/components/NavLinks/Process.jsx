@@ -30,7 +30,7 @@ const Process = () => {
         </div>
         {/* Subsequent content moved closer to the background section */}
         <div className='container -mt-20'> {/* Adjust negative margin to reduce gap */}
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 mt-20'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 mt-18'>
                 {/* Image section */}
                 <div className='flex flex-col justify-center items-center mb-32'>
                     <img src={operator} alt="cfa image" className='max-w-[750px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
@@ -66,14 +66,6 @@ const Process = () => {
             </div>
         </div>
         <div className='relative mt-20'>
-            <div className='flex justify-center items-center mb-24'>
-                <div className="relative z-10">
-                    <h1 className='font-apercuBold text-primary text-7xl mt-48'>Chick-Fil-A <span className='text-secondary'>Capital Centre</span></h1>
-                </div>
-            </div>
-            <div className='absolute top-0 left-0 ml-28 w-5/6 h-36 flex justify-center items-center mb-20'>
-                <img src={dividerLogo} alt="Divider" />
-            </div>
             <div className='flex justify-center flex-col items-center mb-28'>
                 <h1 className='font-apercuBold text-6xl text-primary my-2'>Onboarding</h1>
                 <p className='font-apercuMedium text-xl text-gray-600 my-2'>Onboarding is the first step and an important foundation of your Team Member experience.</p>
@@ -155,9 +147,6 @@ const Process = () => {
                         <div className='w-full h-96 bg-gray-300'>
                             {/* Simulation of a Google Maps placeholder */}
                             <p className='text-center text-gray-500 pt-40'>Google Maps Placeholder</p>
-                        </div>
-                        <div className='absolute -bottom-28 -ml-72 left-0 w-full h-36 flex justify-center items-center'>
-                            <img src={divider} alt="Divider" />
                         </div>
                     </div>
                 </div>

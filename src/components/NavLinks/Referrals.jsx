@@ -37,7 +37,7 @@ const Referrals = () => {
             </div>
         </div>
         <div className='relative -mt-20'> {/* Added padding-top instead of negative margin-top */}
-            <div className='w-full h-36 flex justify-center items-center'>
+            <div className='w-full h-36 flex justify-center items-center mt-18'>
                 <img src={dividerLogo} alt="Divider" className="mx-auto ml-28 w-5/6"/> {/* Center the image */}
             </div>
             <div className='flex flex-col justify-center space-x-4 items-center mt-8'> {/* Removed negative margin-top and adjusted for center alignment */}
