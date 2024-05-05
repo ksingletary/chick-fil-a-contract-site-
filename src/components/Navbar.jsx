@@ -21,7 +21,7 @@ const Navbar = () => {
                     {/* Left side - Logo and Switch Stores button */}
                     <div className='flex items-center space-x-3 mt-4'>
                         <a href="/" className='flex items-center'>
-                            <img src={cfa} alt="logo" className='w-28 h-auto'/>
+                            <img src={cfa} alt="logo" className='w-28 hover:opacity-70 h-auto'/>
                         </a>
                         <button className='flex items-center '>
                             <span className='text-lg font-apercuBold text-white hover:underline mr-2'>Capital Centre</span>
@@ -44,7 +44,7 @@ const Navbar = () => {
                                     </button>
                                     {dropdownOpen && (
                                         <div className="absolute top-8 left-0 bg-white shadow-md rounded-lg w-48">
-                                            <Link to="/mission" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:text-gray-500'>About Our Stores</Link>
+                                            <Link to="/about" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:text-gray-500'>About Our Stores</Link>
                                             <Link to="/contact" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:text-gray-500'>Contact</Link>
                                             <Link to="/referrals" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:text-gray-500'>Referrals</Link>
                                             <Link to="/resources" className='block font-apercuRegular px-4 py-2 text-gray-700 hover:text-gray-500'>Resources</Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                        <Link to="/download-cfa-one" className='primary-btn mb-2 hover:bg-primary-dark text-white font-apercuRegular w-44 py-3 px-4 rounded-full'>
+                        <Link to="https://www.chick-fil-a.com/one" target="_blank" rel="noopener noreferrer" className='primary-btn mb-2 hover:bg-primary-dark text-white font-apercuRegular w-44 py-3 px-4 rounded-full'>
                             Download CFA One
                         </Link>
                     </div>

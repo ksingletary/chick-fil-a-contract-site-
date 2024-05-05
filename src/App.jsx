@@ -11,6 +11,7 @@ import Community from "./components/NavLinks/Community";
 import Referrals from "./components/NavLinks/Referrals";
 import Menu from "./components/NavLinks/Menu";
 import Catering from "./components/NavLinks/Catering"
+import About from "./components/NavLinks/About";
 
 const App = () => {
   return (
@@ -55,6 +56,12 @@ const App = () => {
           <Route path="/catering" element={
             <>
               <Catering />
+              <Footer />
+            </>
+          } />
+          <Route path="/about" element={
+            <>
+              <About />
               <Footer />
             </>
           } />

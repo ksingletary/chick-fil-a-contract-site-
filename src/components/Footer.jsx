@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="text-center space-y-12">
             <div className='flex items-center justify-center space-x-3'>
                 <a href="/" className='flex items-center'>
-                    <img src={cfa} alt="logo" className='w-28 h-auto'/>
+                    <img src={cfa} alt="logo" className='w-28 h-auto hover:opacity-70'/>
                 </a>
                 <button className='flex items-center'>
                     <span className='text-sm font-apercuBold text-white hover:underline mr-2'>Capital Centre</span>

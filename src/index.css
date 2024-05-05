@@ -83,7 +83,7 @@
 }
 
 
-.background-image-process, .background-image-community, 
+.background-image-process, .background-image-community, .background-image-about,
 .background-image-referrals, .background-image-menu, .background-image-catering  {
   position: relative;
   width: 100%;
@@ -95,6 +95,7 @@
 }
 
 .background-image-process::before,
+.background-image-about::before,
 .background-image-catering::before,
 .background-image-menu::before,
 .background-image-community::before,
@@ -128,6 +129,10 @@
 
 .background-image-catering::before {
   background-image: url('./assets/cateringPic.jpeg');
+}
+
+.background-image-about::before {
+  background-image: url('./assets/aboutus.jpeg');
 }
 
 

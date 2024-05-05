@@ -5,7 +5,7 @@ import divider from '../../assets/divider.svg'
 import checkmark from '../../assets/checkmark.svg'
 import handbook from '../../assets/handbook.png'
 import conduct from '../../assets/conduct.svg'
-import dividerLogo from '../../assets/dividerLogo.png'
+import welcome from '../../assets/welcome.jpeg'
 import cfaone2 from '../../assets/cfaone2.jpeg'
 
 
@@ -33,11 +33,11 @@ const Process = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 mt-18'>
                 {/* Image section */}
                 <div className='flex flex-col justify-center items-center mb-32'>
-                    <img src={operator} alt="cfa image" className='max-w-[750px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                    <img src={welcome} alt="cfa image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
                 </div>
                 {/* Text content section */}
                 <div className='flex flex-col justify-center gap-6 mb-40 ml-10'>
-                    <h1 className='text-3xl font-apercuBold text-secondary'>Meet The Owner</h1>
+                    <h1 className='text-5xl font-apercuBold text-secondary'>Get ready to grow with us! </h1>
                     <p className='text-gray-500 font-apercuMedium'>
                     Welcome to Chick-fil-A Cap Centre/Steeplechase! We're thrilled to have you join our team. We strive to be Maryland's beacon of hospitality, 
                     and that starts with developing servant leaders like you. Your dedication and passion will be key to achieving that goal.
@@ -150,6 +150,9 @@ const Process = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='absolute -mb-12 bottom-0 left-0 w-full h-36 flex justify-center items-center'>
+                <img src={divider} alt="Divider" />
             </div>
         </div>
         <div className='min-h-[620px] flex justify-center items-center py-20 sm:py-0 -mt-10'>
