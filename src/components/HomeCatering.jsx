@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from 'react-slick'
+import { Link } from 'react-router-dom';
 import minis from '../assets/minis.jpeg'
 import catering from '../assets/catering-icon.svg'
 
@@ -17,7 +17,7 @@ const Catering = () => {
   return (
     <div style={{ width: '100%', height: '70vh' }} className='mt-10'> 
         <div style={backgroundImageStyle} className="flex items-center justify-end">  
-            <div className='relative ml-auto mr-10 h-auto sm:h-72 w-full sm:w-2/5 bg-white p-4 rounded-3xl shadow-strong transition-shadow duration-300 ease-in-out'>
+            <div className='relative ml-auto mr-10 h-auto sm:h-80 w-full sm:w-2/5 bg-white p-4 rounded-3xl shadow-strong transition-shadow duration-300 ease-in-out'>
                 {/* <!-- SVG Icon positioned in the top right corner --> */}
                 <img src={catering} alt="Icon Description" className="absolute top-3 right-3 h-16 w-16 sm:h-20 sm:w-20"/>
 
@@ -27,6 +27,11 @@ const Catering = () => {
                 <p className='px-8 text-sm sm:text-base'>
                     Breakfast buffets, boardroom lunches, or backyard barbecues - Chick-fil-A Catering brings the flavor, no matter the occasion.
                 </p>
+                <Link to="/catering">
+                    <button className='primary-btn font-apercuRegular mt-6 ml-10'>
+                        View Catering
+                    </button>
+                </Link>
             </div>           
         </div>
 

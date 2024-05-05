@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from "./components/ScrollToTop";
 import Hero from "./components/Hero";
 import HomeMid from "./components/HomeMid";
 import HomeCatering from "./components/HomeCatering";
@@ -16,6 +17,7 @@ import About from "./components/NavLinks/About";
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <Navbar />
         <Routes>
