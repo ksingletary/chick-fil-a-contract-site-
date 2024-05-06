@@ -76,11 +76,11 @@ const Community = () => {
         <div className='relative mt-14 '>
             <div className='flex justify-center flex-col ml-16 items-center'>
                 <h1 className='font-apercuBold text-5xl text-secondary my-2'>Marketing & Donations</h1>
-                <p className='font-apercuRegular text-2xl my-2 px-16 mt-10'>
-                    Chick-fil-A Largo and Steeplechase loves to give back and is proud to be a community partner. Please fill <span className="ml-44"> out the Donation Request Form</span> below and we will review it for consideration.
+                <p className='font-apercuRegular text-center text-2xl my-2 px-16 mt-10'>
+                    Chick-fil-A Largo and Steeplechase loves to give back and is proud to be a community partner. Please fill out the Donation Request Form below and we will review it for consideration.
                 </p>
-                <p className='font-apercuRegular text-2xl my-2 pl-20 mt-14'>
-                    Please provide your request 4-6 weeks prior to your event to allow us time to plan with you and <span className="ml-96"> make your event a success.</span>
+                <p className='font-apercuRegular text-center text-2xl my-2 mt-14'>
+                    Please provide your request 4-6 weeks prior to your event to allow us time to plan with you and <br /> make your event a success.
                 </p>
             </div>
         </div>
@@ -285,9 +285,9 @@ const Community = () => {
                         Stop waiting in line, start earning rewards! Download the Chick-fil-A One App and order your favorite meals ahead of time. 
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
-                        <div className='mt-6'>
+                        <a href='https://www.chick-fil-a.com/one' className='mt-6'>
                             <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
-                        </div>
+                        </a>
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>

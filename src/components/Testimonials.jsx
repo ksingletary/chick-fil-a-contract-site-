@@ -1,7 +1,7 @@
-import React from 'react';
+import {React, useState, useEffect} from 'react';
 import Slider from 'react-slick';
 import cow from "../assets/cow.svg"
-import cfaone from '../assets/cfaone.jpeg'
+import close from '../assets/close.svg'
 import cfaone1 from '../assets/cfaone1.jpeg'
 
 
@@ -78,9 +78,32 @@ const Testimonials = () => {
             },
         ],
     };
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+
+    const closeModal = () => setIsModalOpen(false);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert("Thank you for your referral!")        
+        console.log("Form submitted!");
+        closeModal();
+    };
+
+    useEffect(() => {
+        if (isModalOpen) {
+            // Disable scrolling on the body
+            document.body.style.overflow = 'hidden';
+        }
+        return () => {
+            // Re-enable scrolling when the component is unmounted or modal is closed
+            document.body.style.overflow = 'unset';
+        };
+    }, [isModalOpen]);
   return (
     <>
-        <div className='py-10 mb-10'>
+         <div className='py-10 mb-10'>
             <div className="container">
                 {/* Header Section */}
                     <div>
@@ -111,12 +134,59 @@ const Testimonials = () => {
                     }
                 </Slider>
                 <div className='flex flex-col justify-center mt-11 items-center'>
-                    <button className='secondary-btn ml-auto'>
+                    <button onClick={openModal} className='secondary-btn ml-auto'>
                         Share Feedback
                     </button>
                 </div>
             </div>
         </div>
+        {isModalOpen && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-10">
+                <div className="bg-white p-8 rounded-lg w-1/2 h-5/6 overflow-hidden relative">
+                    <button onClick={closeModal} className="absolute top-4 right-4">
+                        <img src={close} alt="Close" className='h-6 w-6'/>
+                    </button>
+                    <div className="overflow-y-auto h-full">
+                        <h2 className="text-2xl font-bold mb-4 text-center">Share Feedback Form</h2>
+                        <form onSubmit={handleSubmit} className="space-y-4">
+                            <input
+                                type="text"
+                                placeholder="Your Full Name"
+                                required className="block w-full p-2 border border-gray-300 rounded-md"
+                            />
+                            <input
+                                type="email"
+                                placeholder="Your Email"
+                                required className="block w-full p-2 border border-gray-300 rounded-md"
+                            />
+                            <div className="flex flex-col space-y-1">
+                                <label className="font-medium">Type of Feedback:</label>
+                                <select required className="block w-full p-2 border border-gray-300 rounded-md">
+                                    <option value="service">Service</option>
+                                    <option value="product">Catering</option>
+                                    <option value="general">General</option>
+                                </select>
+                            </div>
+                            <textarea
+                                placeholder="Please enter your feedback here..."
+                                required className="block w-full p-2 border border-gray-300 rounded-md resize-none h-24"
+                            />
+                            <div className="flex flex-col space-y-2">
+                                <label className="font-medium text-sm">
+                                    By submitting this form, you agree that the information provided is accurate and genuine.
+                                </label>
+                                <input type="checkbox" required className="ml-2 self-start"/>
+                            </div>
+                            <div className="flex justify-center space-x-4 mt-4">
+                                <button type="submit" className="bg-primary hover:bg-red-800 text-white font-apercuMedium py-2 px-4 rounded">
+                                    Submit Feedback
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        )}
         <div className='min-h-[620px] flex justify-center items-center py-20 sm:py-0 mt-10'>
             <div className='container'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
@@ -127,9 +197,9 @@ const Testimonials = () => {
                         Stop waiting in line, start earning rewards! Download the Chick-fil-A One App and order your favorite meals ahead of time. 
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
-                        <div className='mt-6'>
+                        <a href='https://www.chick-fil-a.com/one' className='mt-6'>
                             <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
-                        </div>
+                        </a>
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>

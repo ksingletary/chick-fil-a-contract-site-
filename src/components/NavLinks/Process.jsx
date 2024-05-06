@@ -165,9 +165,9 @@ const Process = () => {
                         Stop waiting in line, start earning rewards! Download the Chick-fil-A One App and order your favorite meals ahead of time. 
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
-                        <div className='mt-6'>
+                        <a href='https://www.chick-fil-a.com/one' className='mt-6'>
                             <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
-                        </div>
+                        </a>
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
