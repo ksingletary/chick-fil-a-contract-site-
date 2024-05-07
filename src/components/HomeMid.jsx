@@ -72,11 +72,11 @@ const About = () => {
                             <p className='font-apercuRegular mt-5'>Don't stress about spring gatherings! Chick-fil-A catering offers delicious options to fuel any get-together, big or small.</p>
                         </Link>
                         
-                        <Link to="/our-standards" className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 transform-gpu' style={{ width: '346.66px', height: '517.78px' }}>
+                        <a href="https://www.chick-fil-a.com/menu/chick-fil-a-chicken-biscuit" className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 transform-gpu' style={{ width: '346.66px', height: '517.78px' }}>
                             <img src={biscuit} alt="Direct Deposit Form" style={{ width: '380.66px', height: '280px' }} className='mb-4 -mt-4' />
                             <p className='text-xl font-apercuBold text-center -mt-6'>Chicken Biscuit</p>
                             <p className='font-apercuRegular mt-5'>A hand-breaded, pressure-cooked chicken breast seasoned with a fiery spice blend, nestled on a toasted buttered bun with two pickles underneath.</p>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

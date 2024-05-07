@@ -1,5 +1,10 @@
 import blueheart from '../assets/blueheart.png'
 import cateringbox from '../assets/cateringbox.png'
+import springbreak from '../assets/springbreak.jpeg'
+import mothersday from '../assets/mothersday.jpeg'
+import specialday from '../assets/specialday.jpeg'
+import cfaone1 from '../assets/cfaone1.jpeg'
+
 
 const CateringSolutions = () => {
   return (
@@ -16,34 +21,114 @@ const CateringSolutions = () => {
         </div>
         <div className='min-h-[1300px] mt-16 flex justify-center items-center py-20 sm:py-0'>
             <div className='container'>
-                <div className='grid grid-cols-2 gap-6'>
-                {/* First card */}
-                    <a className='bg-cover transform hover:brightness-50  hover:-translate-y-2 hover:shadow-2xl bg-center bg-no-repeat rounded-xl transition-all duration-500 ease-in-out' style={{
+                <div className='grid grid-cols-2 gap-12 -mt-24'>
+                    {/* First card */}
+                    <a href='https://order.chick-fil-a.com/get-started/catering' className='relative overflow-hidden rounded-3xl bg-cover bg-center bg-no-repeat transform hover:brightness-50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 ease-in-out' style={{
                         backgroundImage: `url(${cateringbox})`,
                         width: '593px',
-                        height: '623px',                       
+                        height: '623px',
                     }}>
+                        {/* Text at the top */}
+                        <div className='absolute top-0 left-0 right-0 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            Box Lunches
+                        </div>
+
+                        {/* Text in the middle */}
+                        <div className='absolute top-1/2 left-0 right-0 -translate-y-1/2 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            Made Easy
+                        </div>
+
+                        {/* Text at the bottom */}
+                        <div className='absolute bottom-0 left-0 right-0 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            On-the-Go
+                        </div>
                     </a>
 
                     {/* Second card */}
-                    <div className='flex flex-col items-center justify-start bg-gray-50 p-6 rounded-xl transition-all duration-500 ease-in-out hover:bg-gray-200' style={{ width: '593px', height: '623px' }}>
-                        <img src="" alt="Job Descriptions" style={{ width: '380.66px', height: '280px' }} className='mb-4 -mt-4' />
-                        <p className='text-xl font-apercuBold text-center -mt-6'>The Perfect Spring Menu Made Easy: Catering Solutions for Busy Hosts</p>
-                        <p className='font-apercuRegular mt-5'>Don't stress about spring gatherings! Chick-fil-A catering offers delicious options to fuel any get-together, big or small.</p>
-                    </div>
+                    <a href='https://order.chick-fil-a.com/get-started/catering' className='relative overflow-hidden rounded-3xl bg-cover bg-center bg-no-repeat transform hover:brightness-50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 ease-in-out' style={{
+                        backgroundImage: `url(${springbreak})`,
+                        width: '593px',
+                        height: '623px',
+                    }}>
+                        {/* Text at the top */}
+                        <div className='absolute top-0 left-0 right-0 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            Spring Break
+                        </div>
+
+                        {/* Text in the middle */}
+                        <div className='absolute top-1/2 left-0 right-0 -translate-y-1/2 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            Fuel Your Fun
+                        </div>
+
+                        {/* Text at the bottom */}
+                        <div className='absolute bottom-0 left-0 right-0 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            More Memories
+                        </div>
+                    </a>
 
                     {/* Third card */}
-                    <div className='flex flex-col items-center justify-start bg-gray-50 p-6 rounded-xl transition-all duration-500 ease-in-out hover:bg-gray-200' style={{ width: '593px', height: '623px' }}>
-                        <img src="" alt="Direct Deposit Form" style={{ width: '380.66px', height: '280px' }} className='mb-4 -mt-4' />
-                        <p className='text-xl font-apercuBold text-center -mt-6'>Chicken Biscuit</p>
-                        <p className='font-apercuRegular mt-5'>A hand-breaded, pressure-cooked chicken breast seasoned with a fiery spice blend, nestled on a toasted buttered bun with two pickles underneath.</p>
-                    </div>
+                    <a href='https://order.chick-fil-a.com/get-started/catering' className='relative overflow-hidden rounded-3xl bg-cover bg-center bg-no-repeat transform hover:brightness-50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 ease-in-out' style={{
+                        backgroundImage: `url(${mothersday})`,
+                        width: '593px',
+                        height: '623px',
+                    }}>
+                        {/* Text at the top */}
+                        <div className='absolute top-0 left-0 right-0 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            Mother's Day
+                        </div>
+
+                        {/* Text in the middle */}
+                        <div className='absolute top-1/2 left-0 right-0 -translate-y-1/2 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            Stress Free
+                        </div>
+
+                        {/* Text at the bottom */}
+                        <div className='absolute bottom-0 left-0 right-0 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            Made with Love
+                        </div>
+                    </a>
 
                     {/* Fourth card to complete the 2x2 square */}
-                    <div className='flex flex-col items-center justify-start bg-gray-50 p-6 rounded-xl transition-all duration-500 ease-in-out hover:bg-gray-200' style={{ width: '593px', height: '623px' }}>
-                        <img src="" alt="Spicy Chicken Sandwich" style={{ width: '380.66px', height: '280px' }} className='mb-4 -mt-4' />
-                        <p className='text-xl font-apercuBold text-center -mt-6'>Spicy Chicken Sandwich</p>
-                        <p className='font-apercuRegular mt-5'>A spicy chicken sandwich that combines bold flavors with Chick-fil-A's classic quality ingredients.</p>
+                    <a href='https://order.chick-fil-a.com/get-started/catering' className='relative overflow-hidden rounded-3xl bg-cover bg-center bg-no-repeat transform hover:brightness-50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 ease-in-out' style={{
+                        backgroundImage: `url(${specialday})`,
+                        width: '593px',
+                        height: '623px',
+                    }}>
+                        {/* Text at the top */}
+                        <div className='absolute top-0 left-0 right-0 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            Special Occasion
+                        </div>
+
+                        {/* Text in the middle */}
+                        <div className='absolute top-1/2 left-0 right-0 -translate-y-1/2 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            Memorable
+                        </div>
+
+                        {/* Text at the bottom */}
+                        <div className='absolute bottom-0 left-0 right-0 flex items-center justify-center opacity-0 hover:opacity-100 duration-500 ease-in-out text-secondary text-6xl font-apercuBold p-5'>
+                            Effortless
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div className='min-h-[620px] flex justify-center items-center py-20 sm:py-0'>
+            <div className='container'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+                    {/* Text content section */}
+                    <div className='flex flex-col justify-center gap-6 sm:pt-0'>
+                        <h1 className='text-4xl font-apercuBold text-secondary'>Every Bite Counts! Earn Free Rewards with Chick-fil-A One</h1>
+                        <p className='text-gray-500 font-apercuMedium'>
+                        Stop waiting in line, start earning rewards! Download the Chick-fil-A One App and order your favorite meals ahead of time. 
+                        Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
+                        </p>
+                        <a href='https://www.chick-fil-a.com/one' className='mt-6'>
+                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
+                        </a>
+                    </div>
+                    {/* image section */}
+                    <div className='flex justify-center items-center'>
+                        <img src={cfaone1} alt="located map image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
                     </div>
                 </div>
             </div>
