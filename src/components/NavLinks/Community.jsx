@@ -1,7 +1,6 @@
 import {React, useState, useEffect} from 'react'
 import donation from '../../assets/donation.svg'
 import close from '../../assets/close.svg'
-import dividerLogo from '../../assets/dividerLogo.png'
 import location from '../../assets/location.svg';
 import mobile from '../../assets/mobile.svg'
 import pickup from '../../assets/pickup.svg'

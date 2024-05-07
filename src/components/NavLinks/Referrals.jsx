@@ -1,5 +1,4 @@
 import {React, useState, useEffect} from 'react'
-import dividerLogo from '../../assets/dividerLogo.png'
 import answerchix from '../../assets/alwayschix.jpeg'
 import close from '../../assets/close.svg'
 import cfaone5 from '../../assets/cfaoneFive.jpg'
@@ -37,12 +36,9 @@ const Referrals = () => {
                 <h1 className='text-8xl font-apercuBold mb-14 text-white'>Refer A Friend</h1>
             </div>
         </div>
-        <div className='relative -mt-20'> {/* Added padding-top instead of negative margin-top */}
-            <div className='w-full h-36 flex justify-center items-center mt-18'>
-                <img src={dividerLogo} alt="Divider" className="mx-auto ml-28 w-5/6"/> {/* Center the image */}
-            </div>
+        <div className='relative -mt-28'> {/* Added padding-top instead of negative margin-top */}
             <div className='flex flex-col justify-center space-x-4 items-center mt-8'> {/* Removed negative margin-top and adjusted for center alignment */}
-                <h1 className='font-apercuBold text-5xl text-secondary my-2'>Refer A Friend</h1>
+                <h1 className='font-apercuBold text-5xl text-secondary my-2'>Grow Our Team</h1>
                 <p className='font-apercuRegular text-2xl my-2 px-16 text-center mt-10'>
                     Know someone who shares our passion for hospitality? We'd love for them to join our team! Tell them about the rewarding work environment and great benefits at Chick-fil-A Largo and Steeplechase.
                 </p>

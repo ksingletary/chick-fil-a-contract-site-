@@ -14,6 +14,8 @@ import Menu from "./components/NavLinks/Menu";
 import Catering from "./components/NavLinks/Catering"
 import About from "./components/NavLinks/About";
 import Contact from "./components/NavLinks/Contact";
+import CherryBerry from "./components/CherryBerry";
+import CateringSolutions from "./components/CateringSolutions"
 
 const App = () => {
   return (
@@ -71,6 +73,18 @@ const App = () => {
           <Route path="/contact" element={
             <>
               <Contact />
+              <Footer />
+            </>
+          } />
+          <Route path="/more/cherry-berry" element={
+            <>
+              <CherryBerry />
+              <Footer />
+            </>
+          } />
+          <Route path="/more/catering-solutions" element={
+            <>
+              <CateringSolutions />
               <Footer />
             </>
           } />

@@ -60,13 +60,13 @@ const About = () => {
                     <h1 className="text-5xl ml-8 font-apercuBold text-secondary mb-6 self-start">Something For Everyone:</h1>
                     <div className='flex items-center justify-center sm:justify-start gap-7'>
                         {/* Each card is refactored below */}
-                        <Link to="/spring-beverages" className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 transform-gpu' style={{ width: '346.66px', height: '517.78px' }}>
+                        <Link to="/more/cherry-berry" className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 transform-gpu' style={{ width: '346.66px', height: '517.78px' }}>
                             <img src={cherryberry} alt="Paperwork" style={{ width: '380.66px', height: '280px' }} className='mb-4 -mt-4' />
                             <p className='text-xl font-apercuBold text-center -mt-6'>Spring has sprung at Chick-fil-A! Dive into our refreshing new line of berry-licious beverages.</p>
                             <p className='font-apercuRegular mt-5'>Enjoy a taste of spring with Chick-fil-A's new seasonal berry drinks!</p>
                         </Link>
                         
-                        <Link to="/catering-solutions" className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 transform-gpu' style={{ width: '346.66px', height: '517.78px' }}>
+                        <Link to="/more/catering-solutions" className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 transform-gpu' style={{ width: '346.66px', height: '517.78px' }}>
                             <img src={boxlunch} alt="Job Descriptions" style={{ width: '380.66px', height: '280px' }} className='mb-4 -mt-4' />
                             <p className='text-xl font-apercuBold text-center -mt-6'>The Perfect Spring Menu Made Easy: Catering Solutions for Busy Hosts</p>
                             <p className='font-apercuRegular mt-5'>Don't stress about spring gatherings! Chick-fil-A catering offers delicious options to fuel any get-together, big or small.</p>
