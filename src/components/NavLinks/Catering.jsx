@@ -31,7 +31,7 @@ const Catering = () => {
                         No matter your event size, we cater to all occasions - big or small! Plus, enjoy the convenience of delivery right to your gathering. 
                         </p>
                         <a href="https://www.chick-fil-a.com/stories/chick-fil-a-catering-101" target="_blank" rel="noopener noreferrer">
-                            <button className='primary-btn w-60 mt-5'>More About CFA Catering</button>
+                            <button className='primary-btn w-60 mt-5 transition duration-500 hover:-translate-y-1'>More About CFA Catering</button>
                         </a>
                     
                     </div>
@@ -48,9 +48,9 @@ const Catering = () => {
                         Stop waiting in line, start earning rewards! Download the Chick-fil-A One App and order your favorite meals ahead of time. 
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
-                        <div className='mt-6'>
-                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
-                        </div>
+                        <a href='https://www.chick-fil-a.com/one' className='mt-6'>
+                            <button className='primary-btn w-72 transition duration-500 hover:-translate-y-1 '>Download Chick-fil-A One Today</button>
+                        </a>
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>

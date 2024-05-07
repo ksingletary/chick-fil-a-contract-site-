@@ -1,31 +1,51 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import cfa from '../assets/cfa.svg';
 import { FaBars, FaTimes } from "react-icons/fa";
-import location from '../assets/location.svg';
 import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [showingSteeplechase, setShowingSteeplechase] = useState(false);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
 
     const handleOpen = () => {
         setOpen(!open);
     }
     const handleClose = () => setOpen(false);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+
+        const interval = setInterval(() => {
+            setShowingSteeplechase(prevState => !prevState);
+        }, 20000); // Change text every 2 seconds
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            clearInterval(interval);
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
-            <div className='nav-transparent top-0 left-0 w-full z-10'>
+            <nav className={`nav-transparent ${scrolled ? 'nav-scrolled' : ''}`}>
                 <div className='container max-w-7xl mx-auto px-4 py-3 flex justify-between items-center'>
                     {/* Left side - Logo and Switch Stores button */}
-                    <div className='flex items-center space-x-3 mt-4'>
+                    <div className='flex items-center space-x-3 mt-0'>
                         <a href="/" className='flex items-center'>
-                            <img src={cfa} alt="logo" className='w-28 hover:opacity-70 h-auto'/>
+                            <img src={cfa} alt="logo" className={`logo ${scrolled ? 'small' : ''} hover:opacity-80`}/>
                         </a>
-                        <button className='flex items-center '>
-                            <span className='text-lg font-apercuBold text-white hover:underline mr-2'>Capital Centre</span>
-                        </button>
+                        <h3 className={`text-md font-apercuBold text-white ${scrolled ? 'text-sm' : ''} mr-2`}>
+                            {showingSteeplechase ? "Steeplechase" : "Capital Centre"}
+                        </h3>
+
                     </div>
 
 
@@ -53,9 +73,16 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                        <Link to="https://www.chick-fil-a.com/one" target="_blank" rel="noopener noreferrer" className='primary-btn mb-2 hover:bg-primary-dark text-white font-apercuRegular w-44 py-3 px-4 rounded-full'>
+                        <Link
+                            to="https://www.chick-fil-a.com/one"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className='primary-btn mb-2 transition duration-500 hover:-translate-y-1 hover:bg-primary-dark font-apercuRegular w-44 py-3 px-4 rounded-full'
+                            style={{ color: 'white' }} // Add inline style to set text color to white
+                        >
                             Download CFA One
                         </Link>
+
                     </div>
 
 
@@ -89,7 +116,7 @@ const Navbar = () => {
                         )}
                     </div>
                 </div>
-            </div>
+            </nav>
         </>
     );
 }

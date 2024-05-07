@@ -104,7 +104,7 @@ const Process = () => {
                             The Team Member Handbook provides you with all of the Chick-fil-A Cap Centre/Steeplchase policies 
                             regarding employment at our restaurant and will give you a clear understanding as to what is expected of you to be a successful Team Member.
                             </p>
-                            <a href="" className='mt-4'><button className='primary-btn'>Handbook</button></a>
+                            <a href="#" className='mt-4'><button className='primary-btn transition duration-500 hover:-translate-y-1'>Handbook</button></a>
                         </div>
                         {/* Direct Deposit Form Button */}
                         <div className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-shadow duration-300 ease-in-out w-96 h-96'>
@@ -114,7 +114,7 @@ const Process = () => {
                                 It summarizes many of our expectations and policies that are found in the handbook. 
                             </p>
                             <p className='font-apercuRegular text-gray-700 mt-4'>Please take the time to read it fully.</p>
-                            <a href="" className='mt-4'><button className='primary-btn w-60'>Code of Conduct</button></a>
+                            <a href="#" className='mt-4'><button className='primary-btn w-60 transition duration-500 hover:-translate-y-1'>Code of Conduct</button></a>
                             
                         </div>
                     </div>

@@ -8,40 +8,40 @@ import cfaone1 from '../assets/cfaone1.jpeg'
 const testimonialData = [
     {
         id: 1,
-        name: "John Doe",
+        name: "Amara Skye",
         text: `Largo never disappoints! Their waffle fries are legendary, and the 
         chicken sandwich is always juicy and flavorful. Plus, the service is top-notch - 
         friendly and helpful every time.`,
     },
     {
         id: 2,
-        name: "Hancock",
+        name: "Zane Archer",
         text: `My go-to for lunch! Their chicken nuggets are perfect for a quick bite, 
         and the staff always goes the extra mile. I once forgot my drink, and they chased 
         me down to the parking lot with it!`,
     },
     {
         id: 3,
-        name: "Michelle Plumb",
+        name: "Ethan Miller",
         text: `They're my family's favorite. The chicken tenders are a crowd-pleaser, 
         and the atmosphere is welcoming for everyone. We love their 
         commitment to giving back to the community.`,
     },
     {
         id: 4,
-        name: "Stacy Lattisaw",
+        name: "William Davis",
         text: `Their breakfast is a game-changer! The Chick-fil-A Biscuit is the best I've ever had, 
         and the sausage is perfectly seasoned. Plus, their coffee is a delicious morning pick-me-up.`,
     },
     {
         id: 5,
-        name: "Keith Sweat",
+        name: "Sarah Johnson",
         text: `This Chick-fil-A catering saved my party! The chicken minis were a huge hit with the kids, 
         and the variety of platters made it easy to feed everyone. Plus, everything arrived fresh and delicious.`,
     },
     {
         id: 6,
-        name: "Terri Roberts",
+        name: "Benjamin Brooks",
         text: `More than just chicken! Their salads are surprisingly good, with fresh ingredients 
         and flavorful dressings.  It's a healthy and satisfying lunch option when I'm on the go. I will
         definitely visit Capital Centre again.`,
@@ -134,7 +134,7 @@ const Testimonials = () => {
                     }
                 </Slider>
                 <div className='flex flex-col justify-center mt-11 items-center'>
-                    <button onClick={openModal} className='secondary-btn ml-auto'>
+                    <button onClick={openModal} className='secondary-btn ml-auto transition duration-500 hover:-translate-y-1'>
                         Share Feedback
                     </button>
                 </div>
@@ -142,26 +142,26 @@ const Testimonials = () => {
         </div>
         {isModalOpen && (
             <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-10">
-                <div className="bg-white p-8 rounded-lg w-1/2 h-5/6 overflow-hidden relative">
+                <div className="bg-white p-8 rounded-lg w-1/2 h-3/4 overflow-hidden relative">
                     <button onClick={closeModal} className="absolute top-4 right-4">
                         <img src={close} alt="Close" className='h-6 w-6'/>
                     </button>
                     <div className="overflow-y-auto h-full">
-                        <h2 className="text-2xl font-bold mb-4 text-center">Share Feedback Form</h2>
+                        <h2 className="text-2xl font-apercuBold mb-4 text-center">Share Feedback Form</h2>
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <input
                                 type="text"
                                 placeholder="Your Full Name"
-                                required className="block w-full p-2 border border-gray-300 rounded-md"
+                                required className="block focus:outline-primary font-apercuRegular w-full p-2 border border-gray-300 rounded-md"
                             />
                             <input
                                 type="email"
                                 placeholder="Your Email"
-                                required className="block w-full p-2 border border-gray-300 rounded-md"
+                                required className="block focus:outline-primary w-full font-apercuRegular p-2 border border-gray-300 rounded-md"
                             />
                             <div className="flex flex-col space-y-1">
-                                <label className="font-medium">Type of Feedback:</label>
-                                <select required className="block w-full p-2 border border-gray-300 rounded-md">
+                                <label className="font-apercuMedium">Type of Feedback:</label>
+                                <select required className="block focus:outline-primary w-full font-apercuRegular p-2 border border-gray-300 rounded-md">
                                     <option value="service">Service</option>
                                     <option value="product">Catering</option>
                                     <option value="general">General</option>
@@ -169,10 +169,10 @@ const Testimonials = () => {
                             </div>
                             <textarea
                                 placeholder="Please enter your feedback here..."
-                                required className="block w-full p-2 border border-gray-300 rounded-md resize-none h-24"
+                                required className="block focus:outline-primary font-apercuRegular w-full p-2 border border-gray-300 rounded-md resize-none h-24"
                             />
                             <div className="flex flex-col space-y-2">
-                                <label className="font-medium text-sm">
+                                <label className="font-apercuMedium text-sm">
                                     By submitting this form, you agree that the information provided is accurate and genuine.
                                 </label>
                                 <input type="checkbox" required className="ml-2 self-start"/>
@@ -198,7 +198,7 @@ const Testimonials = () => {
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
                         <a href='https://www.chick-fil-a.com/one' className='mt-6'>
-                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
+                            <button className='primary-btn w-72 transition duration-500 hover:-translate-y-1 '>Download Chick-fil-A One Today</button>
                         </a>
                     </div>
                     {/* image section */}

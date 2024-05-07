@@ -28,7 +28,7 @@ const Catering = () => {
                     Breakfast buffets, boardroom lunches, or backyard barbecues - Chick-fil-A Catering brings the flavor, no matter the occasion.
                 </p>
                 <Link to="/catering">
-                    <button className='primary-btn font-apercuRegular mt-6 ml-10'>
+                    <button className='primary-btn transition duration-500 hover:-translate-y-1 font-apercuRegular mt-6 ml-10'>
                         View Catering
                     </button>
                 </Link>

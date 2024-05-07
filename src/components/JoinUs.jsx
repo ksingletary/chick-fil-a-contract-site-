@@ -18,9 +18,9 @@ const JoinUs = () => {
             <div className='mt-10 relative'>
                 <div style={backgroundImageStyle} className="flex items-center justify-end relative">
                     {/* Content here */}
-                    <div className='absolute bottom-5 right-5 mr-48'>
-                        <button className="primary-btn">Learn More</button>
-                    </div>
+                    <a href='https://www.chick-fil-a.com/careers' className='absolute bottom-5 right-5 mr-48'>
+                        <button className="primary-btn transition duration-500 hover:-translate-y-1">Learn More</button>
+                    </a>
                 </div>
             </div>
             

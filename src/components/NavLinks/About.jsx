@@ -63,9 +63,9 @@ const About = () => {
                             "Largo/Capitol Heights is a fantastic place to be! Every day, this community gives me a reason to look forward to things. 
                             People here are friendly and always curious to learn more about Chick-fil-A. I love helping out other businesses and feel like I'm making a real difference. It's a truly rewarding experience!"
                         </p>
-                        <div className='mt-6'>
-                            <button className='primary-btn w-60 '>Contact Keith Singletary</button>
-                        </div>
+                        <a href='#' className='mt-6'>
+                            <button className='primary-btn w-60 transition duration-500 hover:-translate-y-1 '>Contact Keith Singletary</button>
+                        </a>
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center mt-16'>

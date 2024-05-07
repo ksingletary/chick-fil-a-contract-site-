@@ -168,19 +168,40 @@
   background-image: url('./assets/cateringSol.jpeg');
 }
 
-
-
-
-
 .nav-transparent {
-  background: none;  /* No background */
-  box-shadow: none;  /* No shadows */
-  border: none;      /* No borders */
-  position: absolute;   /* Fix position relative to the viewport */
+  background: none;  /* No background */  /* No shadows */
+  color: white;
+  transition: background-color 0.3s, color 0.3s;    
+  position: fixed;   /* Fix position relative to the viewport */
   top: 0;            /* Align the top edge of the element with the top of the viewport */
   left: 0;           /* Align the left edge of the element with the left of the viewport */
   width: 100%;       /* Stretch the navbar to cover the full width of the viewport */
   z-index: 1000;     /* Ensure the navbar is above other content */
 }
+
+.nav-scrolled {
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 7rem;
+  height: auto;
+  transition: width 0.3s; /* Add a transition for smooth resizing */
+}
+
+.logo.small {
+  width: 4rem;
+  height: auto; /* Adjust the size as needed */
+}
+
+.nav-scrolled .text-white {
+  color: black; /* Change text color to black when scrolled */
+}
+
+
+
+
 
 

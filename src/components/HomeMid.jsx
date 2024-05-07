@@ -17,7 +17,7 @@ const About = () => {
                         <h1 className='text-5xl font-apercuBold text-secondary'>Sip into spring with our seasonal Cherry Berry beverage lineup. Which ones will you choose?</h1>
                         <p className='text-secondary font-apercuRegular'>Download the Chick-fil-A app and order today.</p>
                         <a href='https://order.chick-fil-a.com/get-started' className='w-52'>
-                            <button className='primary-btn w-52 '>Order Now!</button>
+                            <button className='primary-btn w-52 transition duration-500 hover:-translate-y-1'>Order Now!</button>
                         </a>
                     </div>
                     {/* image section */}
@@ -48,7 +48,7 @@ const About = () => {
                         This means creating a welcoming atmosphere for employees and customers alike, while fostering a strong sense of community involvement.
                         </p>
                         <Link to="/about" className='mt-10 w-52'>
-                            <button className='primary-btn w-52 '>Learn More About Us</button>
+                            <button className='primary-btn w-52 transition duration-500 hover:-translate-y-1 '>Learn More About Us</button>
                         </Link>
                     </div>
                 </div>

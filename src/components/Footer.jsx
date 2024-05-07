@@ -1,8 +1,19 @@
-import React from 'react';
+import {React, useState, useEffect} from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import cfa from '../assets/cfa.svg'
 
 const Footer = () => {
+
+    const [showingSteeplechase, setShowingSteeplechase] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setShowingSteeplechase(prevState => !prevState);
+        }, 20000); // Change text every 5 seconds (5000 milliseconds)
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <footer className="bg-footer text-white py-6">
         <div className="text-center space-y-12">
@@ -10,9 +21,9 @@ const Footer = () => {
                 <a href="/" className='flex items-center'>
                     <img src={cfa} alt="logo" className='w-28 h-auto hover:opacity-70'/>
                 </a>
-                <button className='flex items-center'>
-                    <span className='text-sm font-apercuBold text-white hover:underline mr-2'>Capital Centre</span>
-                </button>
+                <h3 className='flex items-center font-apercuBold'>
+                    {showingSteeplechase ? "Steeplechase" : "Capital Centre"}
+                </h3>
             </div>
             {/* Connect With Us */}
             <div className="">
@@ -32,7 +43,8 @@ const Footer = () => {
             </div>
             {/* Address and Phone Number */}
             <div className="mb-6 font-apercuRegular ">
-                <p>1040 Shoppers Way, Largo, MD 20774 • (123) 456-7890 </p>
+                <p>1040 Shoppers Way, Largo, MD 20774 • (301) 333-1981 </p>
+                <p>9121 Alaking Ct, Capitol Heights, MD 20743 • (301) 324-9515 </p>
                 <p>Monday-Saturday: 6:00-10pm • Sunday: Closed</p>
             </div>
             {/* Trademark Phrases */}

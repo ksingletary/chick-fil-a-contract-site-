@@ -90,15 +90,15 @@ const Community = () => {
             <h1 className='font-apercuBold text-5xl text-secondary -mt-16 text-center'> {/* Adjust top margin for proper spacing */}
                 Donation Requests
             </h1>
-            <button onClick={openModal} className='primary-btn w-52 mt-8 mx-auto'> {/* Center the button horizontally within the flex container */}
+            <button onClick={openModal} className='primary-btn transition duration-500 hover:-translate-y-1 w-52 mt-8 mx-auto'> {/* Center the button horizontally within the flex container */}
                 Donation Request
             </button>
         </div>
         {isModalOpen && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center mt-10 items-center">
                 <div className="bg-white p-8 rounded-lg w-1/2 h-5/6 overflow-hidden relative">
                     <div className="overflow-y-auto h-full">
-                        <h2 className="text-2xl font-bold mb-4 text-center">Donation Request Form</h2>
+                        <h2 className="text-2xl font-apercuBold mb-4 text-center">Donation Request Form</h2>
                         <button onClick={closeModal}>
                             <img src={close} alt="" className='h-4 w-4 absolute top-4 right-4'/>
                         </button>
@@ -106,82 +106,82 @@ const Community = () => {
                             <input 
                                 type="text" 
                                 placeholder="Organization Full Name" 
-                                required className="block w-full p-2 border border-gray-300 rounded-md" />
+                                required className="block focus:outline-primary font-apercuRegular w-full p-2 border border-gray-300 rounded-md" />
                             <input 
                                 type="text" 
                                 placeholder="First Name" 
-                                required className="block w-full p-2 border border-gray-300 rounded-md" />
+                                required className="block focus:outline-primary font-apercuRegular w-full p-2 border border-gray-300 rounded-md" />
                             <input 
                                 type="text" 
                                 placeholder="Last Name" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full font-apercuRegular p-2 border border-gray-300 rounded-md" />
                             <input 
                                 type="text" 
                                 placeholder="Address Line 1" 
-                                required className="block w-full p-2 border border-gray-300 rounded-md" />
+                                required className="block focus:outline-primary font-apercuRegular w-full p-2 border border-gray-300 rounded-md" />
                             <input 
                                 type="text" 
                                 placeholder="Address Line 2" 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 font-apercuRegular border border-gray-300 rounded-md" />
                             <input 
                                 type="text" 
                                 placeholder="City" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 font-apercuRegular border border-gray-300 rounded-md" />
                             <input 
                                 type="text"
                                 placeholder="State" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md" />
                             <input 
                                 type="text" 
                                 placeholder="ZIP Code" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md" />
                             <input 
                                 type="text" 
                                 placeholder="Name of Contact" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md" />
                             <input 
                                 type="tel" 
                                 placeholder="Contact Phone" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md" />
                             <input 
                                 type="email" 
                                 placeholder="Contact Email" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md" />
                             <input 
                                 type="text" 
                                 placeholder="Type of Group" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md" />
                             <input 
                                 type="text" 
                                 placeholder="Title of Event" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md" />
                             <input 
                                 type="date" 
                                 placeholder="Date of Event" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md" />
                             <textarea 
                                 placeholder="Description of Event" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md resize-none h-24" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md resize-none h-24" />
                             <input 
                                 type="number" 
                                 placeholder="Expected Attendance" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md" />
                             <textarea 
                                 placeholder="How can we help?" 
                                 required 
-                                className="block w-full p-2 border border-gray-300 rounded-md resize-none h-24" />
+                                className="block focus:outline-primary w-full p-2 border font-apercuRegular border-gray-300 rounded-md resize-none h-24" />
                             <div className="flex justify-center space-x-4 mt-4">
                                 <button type="submit" className="bg-primary hover:bg-red-800 text-white font-apercuMedium py-2 px-4 rounded">
                                     Submit
@@ -226,11 +226,11 @@ const Community = () => {
                     </div>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mt-6 mb-4'>SERVICE OPTIONS</h2>
                     <p className='font-apercuRegular text-gray-600 mb-16'>
-                        Drive-thru, Carry-out, Curbside, Dine-in, Delivery, DoorDash
+                        Drive-thru, Carry-out, Curbside, Dine-in, DoorDash
                     </p>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>PHONE NUMBER:</h2>
                     <p className='font-apercuRegular underline text-primary mb-4'>
-                        (301) 555-0186
+                        (301) 333-1981
                     </p>
                 </div>
 
@@ -265,11 +265,11 @@ const Community = () => {
                     </div>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mt-6 mb-4'>SERVICE OPTIONS</h2>
                     <p className='font-apercuRegular text-gray-600 mb-16'>
-                        Drive-thru, Carry-out, Curbside, Dine-in, Delivery, DoorDash
+                        Drive-thru, Carry-out, Curbside, Dine-in, DoorDash
                     </p>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>PHONE NUMBER:</h2>
                     <p className='font-apercuRegular underline text-primary mb-4'>
-                        (301) 555-0186
+                        (301) 324-9515
                     </p>
                 </div>
             </div>
@@ -285,7 +285,7 @@ const Community = () => {
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
                         <a href='https://www.chick-fil-a.com/one' className='mt-6'>
-                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
+                            <button className='primary-btn w-72 transition duration-500 hover:-translate-y-1 '>Download Chick-fil-A One Today</button>
                         </a>
                     </div>
                     {/* image section */}

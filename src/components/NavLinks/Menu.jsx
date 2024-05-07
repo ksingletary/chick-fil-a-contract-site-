@@ -37,7 +37,7 @@ const Menu = () => {
                             Fresh, simple, quality that you can taste. Every time.
                         </p>
                         <a href="https://www.chick-fil-a.com/" target="_blank" rel="noopener noreferrer">
-                            <button className='primary-btn mt-5'>View Full Menu</button>
+                            <button className='primary-btn mt-5 transition duration-500 hover:-translate-y-1'>View Full Menu</button>
                         </a>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const Menu = () => {
                             Enjoy classic favorites made with real ingredients, or explore our exciting new options like the protein-packed Egg White Grill and vitamin-rich Kale Crunch Side. 
                             Eat well, feel great, and conquer your day!
                             </p>
-                            <a href="https://www.chick-fil-a.com/stories" className='mt-4'  target="_blank" rel="noopener noreferrer" ><button className='primary-btn w-60 mt-6'>Learn More</button></a>
+                            <a href="https://www.chick-fil-a.com/stories" className='mt-4 transition duration-500 hover:-translate-y-1'  target="_blank" rel="noopener noreferrer" ><button className='primary-btn w-60 mt-6'>Learn More</button></a>
                         </div>
                         {/* Job Descriptions Button */}
                         <div className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-shadow duration-300 ease-in-out w-96 h-96'>
@@ -79,7 +79,7 @@ const Menu = () => {
                                 Our commitment to quality starts with whole, boneless breast of chicken, free of fillers or artificial additives.  
                                 We source from U.S. farms that adhere to our rigorous Animal Wellbeing Standards, ensuring healthy birds raised naturally.  Enjoy the difference real chicken makes!
                             </p>  
-                            <a href="https://www.chick-fil-a.com/our-standards" className='mt-4'  target="_blank" rel="noopener noreferrer" ><button className='primary-btn w-60'>Learn More</button></a>
+                            <a href="https://www.chick-fil-a.com/our-standards" className='mt-4 transition duration-500 hover:-translate-y-1'  target="_blank" rel="noopener noreferrer" ><button className='primary-btn w-60'>Learn More</button></a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ const Menu = () => {
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
                         <div className='mt-6'>
-                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
+                            <button className='primary-btn w-72 transition duration-500 hover:-translate-y-1 '>Download Chick-fil-A One Today</button>
                         </div>
                     </div>
                     {/* image section */}
