@@ -16,16 +16,17 @@ import About from "./components/NavLinks/About";
 import Contact from "./components/NavLinks/Contact";
 import CherryBerry from "./components/CherryBerry";
 import CateringSolutions from "./components/CateringSolutions"
+import Resources from "./components/NavLinks/Resources";
 
 const App = () => {
   return (
     <Router>
       <ScrollToTop />
       <div>
-        <Navbar />
         <Routes>
           <Route path="/" element={
             <>
+              <Navbar />
               <Hero />
               <HomeMid />
               <HomeCatering />
@@ -36,56 +37,70 @@ const App = () => {
           } />
           <Route path="/process" element={
             <>
+              <Navbar />
               <Process />
               <Footer />
             </>
           } />
           <Route path="/community" element={
             <>
+              <Navbar />
               <Community />
               <Footer />
             </>
           } />
           <Route path="/referrals" element={
             <>
+              <Navbar />
               <Referrals />
               <Footer />
             </>
           } />
           <Route path="/menu" element={
             <>
+              <Navbar />
               <Menu />
               <Footer />
             </>
           } />
           <Route path="/catering" element={
             <>
+              <Navbar />
               <Catering />
               <Footer />
             </>
           } />
           <Route path="/about" element={
             <>
+              <Navbar />
               <About />
               <Footer />
             </>
           } />
           <Route path="/contact" element={
             <>
+              <Navbar />
               <Contact />
               <Footer />
             </>
           } />
           <Route path="/more/cherry-berry" element={
             <>
+              <Navbar />
               <CherryBerry />
               <Footer />
             </>
           } />
           <Route path="/more/catering-solutions" element={
             <>
+              <Navbar />
               <CateringSolutions />
               <Footer />
+            </>
+          } />
+          <Route path="/resources" element={
+            <>
+              <Resources />
             </>
           } />
         </Routes>

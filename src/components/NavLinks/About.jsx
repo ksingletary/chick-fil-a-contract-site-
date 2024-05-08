@@ -52,7 +52,7 @@ const About = () => {
 
                         <p className='text-gray-500 font-apercuMedium mt-4'>
                             Keith graduated from Cheyney University in 1982, and after dedicating a number of years to Red Cross, his passion for service took a different form.  
-                            In 1999, Keith scratched his entrepreneurial itch and opened his first Chick-fil-A location in a mall setting. 
+                            In 2000, Keith scratched his entrepreneurial itch and opened his first Chick-fil-A location in a mall setting. 
                             Following the success of that store, he continued to grow his business, opening his first free-standing Chick-fil-A in 2003, and his second in 2007. 
                         </p>
                         <p className=' text-gray-500 font-apercuMedium mt-4'>

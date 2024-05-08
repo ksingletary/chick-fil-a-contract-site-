@@ -1,6 +1,8 @@
 import {React, useState, useEffect} from 'react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import cfa from '../assets/cfa.svg'
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
 
@@ -18,9 +20,9 @@ const Footer = () => {
         <footer className="bg-footer text-white py-6">
         <div className="text-center space-y-12">
             <div className='flex items-center justify-center space-x-3'>
-                <a href="/" className='flex items-center'>
+                <Link to="/" className='flex items-center'>
                     <img src={cfa} alt="logo" className='w-28 h-auto hover:opacity-70'/>
-                </a>
+                </Link>
                 <h3 className='flex items-center font-apercuBold'>
                     {showingSteeplechase ? "Steeplechase" : "Capital Centre"}
                 </h3>

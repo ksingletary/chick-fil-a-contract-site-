@@ -9,7 +9,6 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [showingSteeplechase, setShowingSteeplechase] = useState(false);
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
 
     const handleOpen = () => {
         setOpen(!open);
@@ -39,9 +38,9 @@ const Navbar = () => {
                 <div className='container max-w-7xl mx-auto px-4 py-3 flex justify-between items-center'>
                     {/* Left side - Logo and Switch Stores button */}
                     <div className='flex items-center space-x-3 mt-0'>
-                        <a href="/" className='flex items-center'>
+                        <Link to="/" className='flex items-center'>
                             <img src={cfa} alt="logo" className={`logo ${scrolled ? 'small' : ''} hover:opacity-80`}/>
-                        </a>
+                        </Link>
                         <h3 className={`text-md font-apercuBold text-white ${scrolled ? 'text-sm' : ''} mr-2`}>
                             {showingSteeplechase ? "Steeplechase" : "Capital Centre"}
                         </h3>
