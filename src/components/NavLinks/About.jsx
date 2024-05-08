@@ -51,7 +51,7 @@ const About = () => {
                         <h2 className='text-md text-3xl font-apercuBold text-secondary'>Keith Singletary</h2>
 
                         <p className='text-gray-500 font-apercuMedium mt-4'>
-                            Keith graduated from Cheyney University in 1982, and after dedicating a number of years to Red Cross, his passion for service took a different form.  
+                            Keith graduated from Cheyney University in [Year of Graduation]. After dedicating a number of years to the Red Cross, his passion for service took a different form.  
                             In 1999, Keith scratched his entrepreneurial itch and opened his first Chick-fil-A location in a mall setting. 
                             Following the success of that store, he continued to grow his business, opening his first free-standing Chick-fil-A in 2003, and his second in 2007. 
                         </p>
@@ -60,7 +60,7 @@ const About = () => {
                             Whether it's empowering young students through Chick-fil-A Leader Academy or being a means of support and blessing during times of trial or tragedy, Keith loves to use his platform to benefit Capital Centre and Steeplechase.
                         </p>
                         <p className='text-gray-500 font-apercuMedium mt-4'>
-                            "Largo and Capitol Heights are fantastic places to be! Every day, this community gives me a reason to look forward to things. 
+                            "Largo/Capitol Heights is a fantastic place to be! Every day, this community gives me a reason to look forward to things. 
                             People here are friendly and always curious to learn more about Chick-fil-A. I love helping out other businesses and feel like I'm making a real difference. It's a truly rewarding experience!"
                         </p>
                         <a href='#' className='mt-6'>
@@ -108,11 +108,11 @@ const About = () => {
                     </div>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mt-6 mb-4'>SERVICE OPTIONS</h2>
                     <p className='font-apercuRegular text-gray-600 mb-16'>
-                        Drive-thru, Carry-out, Curbside, Dine-in, DoorDash
+                        Drive-thru, Carry-out, Curbside, Dine-in, Delivery, DoorDash
                     </p>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>PHONE NUMBER:</h2>
                     <p className='font-apercuRegular underline text-primary mb-4'>
-                        (301) 333-1981
+                        (301) 555-0186
                     </p>
                 </div>
 
@@ -147,11 +147,11 @@ const About = () => {
                     </div>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mt-6 mb-4'>SERVICE OPTIONS</h2>
                     <p className='font-apercuRegular text-gray-600 mb-16'>
-                        Drive-thru, Carry-out, Curbside, Dine-in, DoorDash
+                        Drive-thru, Carry-out, Curbside, Dine-in, Delivery, DoorDash
                     </p>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>PHONE NUMBER:</h2>
                     <p className='font-apercuRegular underline text-primary mb-4'>
-                        (301) 324-9515
+                        (301) 555-0186
                     </p>
                 </div>
             </div>

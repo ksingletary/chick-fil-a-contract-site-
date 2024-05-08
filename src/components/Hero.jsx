@@ -16,7 +16,7 @@ const Hero = () => {
                     </a>
                     <Link to="/about">
                         <button className="bg-secondary transition duration-500 hover:-translate-y-1 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full shadow-lg">
-                            More About Our Stores
+                            More About Chick-fil-A Capital Centre
                         </button>
                     </Link>
                 </div>

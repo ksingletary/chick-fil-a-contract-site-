@@ -33,7 +33,7 @@ const Contact = () => {
                                 <input 
                                     type="text" 
                                     required 
-                                    className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md"
+                                    className="block w-full p-2 border border-gray-300 rounded-md"
                                 />
                             </div>
                             <div className="w-full">
@@ -43,7 +43,7 @@ const Contact = () => {
                                 <input 
                                     type="text" 
                                     required 
-                                    className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md"
+                                    className="block w-full p-2 border border-gray-300 rounded-md"
                                 />
                             </div>
                         </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                                 <input 
                                     type="tel" 
                                     required 
-                                    className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md"
+                                    className="block w-full p-2 border border-gray-300 rounded-md"
                                 />
                             </div>
                             <div className="w-full">
@@ -65,7 +65,7 @@ const Contact = () => {
                                 <input 
                                     type="email" 
                                     required 
-                                    className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md"
+                                    className="block w-full p-2 border border-gray-300 rounded-md"
                                 />
                             </div>
                         </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                             </label>
                             <select 
                                 required 
-                                className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md">
+                                className="block w-full p-2 border border-gray-300 rounded-md">
                                 <option value="">Select Subject</option>
                                 <option value="general">General question/comment</option>
                                 <option value="catering">Catering</option>
@@ -89,11 +89,11 @@ const Contact = () => {
                             </label>
                             <textarea 
                                 required 
-                                className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md h-40 resize-none"
+                                className="block w-full p-2 border border-gray-300 rounded-md h-40 resize-none"
                             />
                         </div>
                         <div className="flex justify-center absolute -bottom-18 left-0">
-                            <button type="submit" className="bg-primary hover:bg-red-700 transition duration-500 hover:-translate-y-1 text-white text-lg font-apercuMedium py-4 px-6 rounded-full">
+                            <button type="submit" className="bg-primary hover:bg-red-700 text-white text-lg font-apercuMedium py-4 px-6 rounded-full">
                                 Submit Message
                             </button>
                         </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                     </p>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>PHONE NUMBER:</h2>
                     <p className='font-apercuRegular underline text-primary mb-4'>
-                        (301) 333-1981
+                        (301) 555-0186
                     </p>
                 </div>
 
@@ -178,7 +178,7 @@ const Contact = () => {
                     </p>
                     <h2 className='font-CaeciliaSemi text-gray-600 text-md mb-4'>PHONE NUMBER:</h2>
                     <p className='font-apercuRegular underline text-primary mb-4'>
-                        (301) 324-9515
+                        (301) 555-0186
                     </p>
                 </div>
             </div>
@@ -194,7 +194,7 @@ const Contact = () => {
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
                         <a href='https://www.chick-fil-a.com/one' className='mt-6'>
-                            <button className='primary-btn w-72  transition duration-500 hover:-translate-y-1 '>Download Chick-fil-A One Today</button>
+                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
                         </a>
                     </div>
                     {/* image section */}

@@ -123,7 +123,7 @@ const CateringSolutions = () => {
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
                         <a href='https://www.chick-fil-a.com/one' className='mt-6'>
-                            <button className='primary-btn w-72 transition duration-500 hover:-translate-y-1'>Download Chick-fil-A One Today</button>
+                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
                         </a>
                     </div>
                     {/* image section */}

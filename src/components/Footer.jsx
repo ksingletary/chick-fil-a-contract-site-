@@ -9,7 +9,7 @@ const Footer = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setShowingSteeplechase(prevState => !prevState);
-        }, 30000); // Change text every 5 seconds (5000 milliseconds)
+        }, 20000); // Change text every 5 seconds (5000 milliseconds)
 
         return () => clearInterval(interval);
     }, []);
