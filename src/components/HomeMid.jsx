@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import boxlunch from '../assets/boxlunch.png'
 
 
-const About = () => {
+const HomeMid = () => {
   return (
     <>
         <div className='min-h-[250px] flex justify-center items-center py-20 sm:py-0 mt-14'>
@@ -86,4 +86,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default HomeMid;
