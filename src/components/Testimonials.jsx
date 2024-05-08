@@ -115,7 +115,7 @@ const Testimonials = () => {
                 <Slider {...settings}>
                     {
                         testimonialData.map((item) => (
-                            <div className='my-6'>
+                            <div key={item.id} className='my-6'>
                                 <div className='flex flex-col gap-4 shadow-strong py-8 px-6 mx-4 rounded-xl relative'>
                                     <div className='mb-4'>
                                         <img src={cow} alt="" className='rounded-full w-20 h-20' />
@@ -133,6 +133,7 @@ const Testimonials = () => {
                         ))
                     }
                 </Slider>
+
                 <div className='flex flex-col justify-center mt-11 items-center'>
                     <button onClick={openModal} className='secondary-btn ml-auto transition duration-500 hover:-translate-y-1'>
                         Share Feedback
