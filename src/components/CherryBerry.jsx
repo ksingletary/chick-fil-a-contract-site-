@@ -22,7 +22,7 @@ const CherryBerry = () => {
                         <h1 className='text-5xl font-apercuBold text-secondary'>Cherry Berry Frosted Lemonade</h1>
                         <p className='text-secondary font-apercuRegular'>The perfect springtime sweet treat, combining Chick-fil-A Lemonade® (or Diet Lemonade) and signature Icedream® dessert with cherry, blueberry and cranberry flavors..</p>
                         <a href='https://www.chick-fil-a.com/menu/treats/cherry-berry-frosted-lemonade' className='w-52'>
-                            <button className='primary-btn w-38'>View Product</button>
+                            <button className='primary-btn w-38 transition duration-500 hover:-translate-y-1'>View Product</button>
                         </a>
                     </div>
                     {/* image section */}
@@ -46,7 +46,7 @@ const CherryBerry = () => {
                         <p className='text-secondary font-apercuRegular'>This sunny combination is a mix of classic Chick-fil-A Lemonade® and cherry, blueberry and cranberry flavors.
                         </p>
                         <a href="https://www.chick-fil-a.com/menu/beverages/cherry-berry-lemonade" className='w-52'>
-                            <button className='primary-btn w-38 '>View Product</button>
+                            <button className='primary-btn w-38 transition duration-500 hover:-translate-y-1'>View Product</button>
                         </a>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ const CherryBerry = () => {
                         <h1 className='text-5xl font-apercuBold text-secondary'>Cherry Berry Iced Tea</h1>
                         <p className='text-secondary font-apercuRegular'>Freshly-brewed daily from a blend of tea leaves, the Cherry Berry Iced Tea mixes classic Iced Tea with cherry, blueberry and cranberry flavors.</p>
                         <a href='https://www.chick-fil-a.com/menu/beverages/cherry-berry-iced-tea' className='w-52'>
-                            <button className='primary-btn w-38 '>View Product</button>
+                            <button className='primary-btn w-38 transition duration-500 hover:-translate-y-1'>View Product</button>
                         </a>
                     </div>
                     {/* image section */}
@@ -84,7 +84,7 @@ const CherryBerry = () => {
                         <p className='text-secondary font-apercuRegular'>This beverage combines Chick-fil-A's Sunjoy® (Chick-fil-A® Lemonade and freshly-brewed Sweetened Iced Tea) with cherry, blueberry and cranberry flavors for a refreshing taste.
                         </p>
                         <a href="https://www.chick-fil-a.com/menu/beverages/cherry-berry-sunjoy" className=' w-52'>
-                            <button className='primary-btn w-38 '>View Product</button>
+                            <button className='primary-btn w-38 transition duration-500 hover:-translate-y-1'>View Product</button>
                         </a>
                     </div>
                 </div>
@@ -101,7 +101,7 @@ const CherryBerry = () => {
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
                         <a href='https://www.chick-fil-a.com/one' className='mt-6'>
-                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
+                            <button className='primary-btn w-72 transition duration-500 hover:-translate-y-1'>Download Chick-fil-A One Today</button>
                         </a>
                     </div>
                     {/* image section */}

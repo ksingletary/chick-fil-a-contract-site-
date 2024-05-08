@@ -23,7 +23,7 @@ const Navbar = () => {
 
         const interval = setInterval(() => {
             setShowingSteeplechase(prevState => !prevState);
-        }, 20000); // Change text every 2 seconds
+        }, 30000); // Change text every 2 seconds
 
         window.addEventListener('scroll', handleScroll);
 

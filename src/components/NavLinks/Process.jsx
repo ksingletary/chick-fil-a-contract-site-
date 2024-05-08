@@ -1,5 +1,6 @@
 import React from 'react';
-import operator from '../../assets/operator.jpeg';
+import.meta.env.VITE_GOOGLE_MAPS_API_KEY
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import cathy from '../../assets/cathy.jpeg'
 import divider from '../../assets/divider.svg'
 import checkmark from '../../assets/checkmark.svg'
@@ -20,6 +21,19 @@ const Process = () => {
         justifyContent: 'center',
         alignItems: 'center'
     };
+
+    const mapStyles = {
+        height: '100%',
+        width: '100%'
+      };
+    
+      const defaultCenter = {
+        lat: 38.904500,
+        lng: -76.848210
+      };
+
+    const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
   return (
     <>
         {/* Background image section with centered text */}
@@ -145,8 +159,14 @@ const Process = () => {
                         <p className='font-apercuRegular text-gray-600'>Orientation will be held at the store: 1040 Shoppers Way, Largo, MD. Please park in the parking lot in front of the store.</p>
                         {/* Placeholder for Google Maps */}
                         <div className='w-full h-96 bg-gray-300'>
-                            {/* Simulation of a Google Maps placeholder */}
-                            <p className='text-center text-gray-500 pt-40'>Google Maps Placeholder</p>
+                            <LoadScript googleMapsApiKey={apiKey}>
+                                <GoogleMap
+                                mapContainerStyle={mapStyles}
+                                zoom={18}
+                                center={defaultCenter}
+                                >
+                                </GoogleMap>
+                            </LoadScript>
                         </div>
                     </div>
                 </div>
@@ -166,7 +186,7 @@ const Process = () => {
                         Plus, you'll unlock exclusive benefits and free rewards just for being an app user. It's the perfect way to make your Chick-fil-A experience even more delicious and convenient.
                         </p>
                         <a href='https://www.chick-fil-a.com/one' className='mt-6'>
-                            <button className='primary-btn w-72 '>Download Chick-fil-A One Today</button>
+                            <button className='primary-btn w-72 transition duration-500 hover:-translate-y-1'>Download Chick-fil-A One Today</button>
                         </a>
                     </div>
                     {/* image section */}
