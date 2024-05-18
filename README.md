@@ -29,7 +29,7 @@ The site is deployed on Netflify for the meantime. Best on laptop screens for no
 ## Installation
 
 - Clone the repository to your local machine using git clone
-- Navigate to the project directory using cd chick-fil-a
+- Navigate to the project directory using cd chick-fil-a-contract-site
 - Install the necessary dependencies with npm install
 - Start the application using npm run dev
 - Open your browser and navigate to http://localhost:5173

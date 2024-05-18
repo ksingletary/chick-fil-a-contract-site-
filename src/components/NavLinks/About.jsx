@@ -9,21 +9,27 @@ import catering from '../../assets/catering.svg'
 import catering1 from '../../assets/catering-icon.svg'
 import dinein from '../../assets/dine-in.svg'
 import doordash from '../../assets/doordash.png'
+import LazyImage from '../LazyLoad/LazyLoad';
+import LazyBackground from '../LazyLoad/LazyBackground';
 
 const About = () => {
   return (
     <>
-        <div className='background-image-about min-h-screen flex justify-center items-center'>
+        <LazyBackground src={('../../assets/aboutus.jpeg')} className='background-image-about min-h-screen flex justify-center items-center'>
             <div className='container text-center'>
-                <h1 className='text-7xl font-apercuBold mb-20 text-white '>About Us, <br />Capital Centre & Steeplechase</h1>
+                <h1 className='text-7xl font-apercuBold mb-20 text-white'>About Us, <br />Capital Centre & Steeplechase</h1>
             </div>
-        </div>
+        </LazyBackground>
         <div className='min-h-[620px] -mt-28 flex justify-center items-center py-12 sm:py-0'>
             <div className='container'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={vision} alt="cfa image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={vision}
+                            alt="cfa image"
+                            className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                     {/* Text content section */}
                     <div className='flex flex-col justify-center mb-10 gap-6 sm:pt-0'>
@@ -69,7 +75,11 @@ const About = () => {
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center mt-16'>
-                        <img src={operator} alt="operator pic" className='max-w-[500px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={operator}
+                            alt="operator pic"
+                            className='max-w-[500px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                 </div>
             </div>

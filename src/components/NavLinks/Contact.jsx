@@ -8,15 +8,17 @@ import catering1 from '../../assets/catering-icon.svg'
 import dinein from '../../assets/dine-in.svg'
 import doordash from '../../assets/doordash.png'
 import cfaone6 from '../../assets/cfaone6.jpeg'
+import LazyImage from '../LazyLoad/LazyLoad';
+import LazyBackground from '../LazyLoad/LazyBackground';
 
 const Contact = () => {
   return (
     <>
-        <div className='background-image-contact min-h-screen flex justify-center items-center'>
+        <LazyBackground src={('../../assets/contact.jpeg')} className='background-image-contact min-h-screen flex justify-center items-center'>
             <div className='container text-center'>
-                <h1 className='text-7xl font-apercuBold mb-20 text-white '>Contact Us</h1>
+                <h1 className='text-7xl font-apercuBold mb-20 text-white'>Contact Us</h1>
             </div>
-        </div>
+        </LazyBackground>
         <div className='min-h-[720px] -mt-16 flex justify-center items-center py-12 sm:py-0'>
             <div className='container'>
                 <p className='font-apercuRegular mb-10 px-10'>
@@ -199,7 +201,11 @@ const Contact = () => {
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={cfaone6} alt="located map image" className='max-w-[650px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={cfaone6}
+                            alt="located map image"
+                            className='max-w-[650px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                 </div>
             </div>

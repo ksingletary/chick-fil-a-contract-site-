@@ -4,16 +4,17 @@ import springbreak from '../assets/springbreak.jpeg'
 import mothersday from '../assets/mothersday.jpeg'
 import specialday from '../assets/specialday.jpeg'
 import cfaone1 from '../assets/cfaone1.jpeg'
-
+import LazyImage from './LazyLoad/LazyLoad'
+import LazyBackground from './LazyLoad/LazyBackground'
 
 const CateringSolutions = () => {
   return (
     <>
-        <div className='background-image-cateringSol min-h-screen flex justify-center items-center'>
+        <LazyBackground src={('../../assets/cateringSol.jpeg')} className='background-image-cateringSol min-h-screen flex justify-center items-center'>
             <div className='container text-center mb-10'>
-                <h1 className='text-7xl font-apercuBold mb-16 text-white '>Catering Solutions</h1>
+                <h1 className='text-7xl font-apercuBold mb-16 text-white'>Catering Solutions</h1>
             </div>
-        </div>
+        </LazyBackground>
         <div className='flex flex-col items-center mb-20 -mt-20 space-y-6'>
             <img src={blueheart} alt="blue heart logo" className=''/>
             <h1 className='text-center text-5xl font-apercuBold text-secondary'>Stress-free spring catering!</h1>
@@ -128,7 +129,11 @@ const CateringSolutions = () => {
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={cfaone1} alt="located map image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={cfaone1}
+                            alt="located map image"
+                            className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import cow from "../assets/cow.svg"
 import close from '../assets/close.svg'
 import cfaone1 from '../assets/cfaone1.jpeg'
-
+import LazyImage from './LazyLoad/LazyLoad';
 
 const testimonialData = [
     {
@@ -204,7 +204,11 @@ const Testimonials = () => {
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={cfaone1} alt="located map image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={cfaone1}
+                            alt="located map image"
+                            className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                 </div>
             </div>

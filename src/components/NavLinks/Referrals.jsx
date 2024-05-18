@@ -2,6 +2,8 @@ import {React, useState, useEffect} from 'react'
 import answerchix from '../../assets/alwayschix.jpeg'
 import close from '../../assets/close.svg'
 import cfaone5 from '../../assets/cfaoneFive.jpg'
+import LazyImage from '../LazyLoad/LazyLoad'
+import LazyBackground from '../LazyLoad/LazyBackground'
 
 const Referrals = () => {
 
@@ -31,11 +33,11 @@ const Referrals = () => {
 
   return (
     <>
-        <div className='background-image-referrals min-h-screen flex justify-center items-center'>
+        <LazyBackground src={('../../assets/referral.jpeg')} className='background-image-referrals min-h-screen flex justify-center items-center'>
             <div className='container text-center'>
                 <h1 className='text-8xl font-apercuBold mb-14 text-white'>Refer A Friend</h1>
             </div>
-        </div>
+        </LazyBackground>
         <div className='relative -mt-28'> {/* Added padding-top instead of negative margin-top */}
             <div className='flex flex-col justify-center space-x-4 items-center mt-8'> {/* Removed negative margin-top and adjusted for center alignment */}
                 <h1 className='font-apercuBold text-5xl text-secondary my-2'>Grow Our Team</h1>
@@ -112,7 +114,11 @@ const Referrals = () => {
 
         <div className='min-h-[620px] flex justify-center items-center'>
             <div className='container'>
-                <img src={answerchix} alt="chickfila store pic" className='ml-40 h-3/4 w-3/4'/>
+                <LazyImage
+                    src={answerchix}
+                    alt="chickfila store pic"
+                    className='ml-40 h-3/4 w-3/4'
+                />
             </div>
         </div>
         <div className='min-h-[620px] flex justify-center items-center py-20 sm:py-0 -mt-10'>
@@ -131,7 +137,11 @@ const Referrals = () => {
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={cfaone5} alt="located map image" className='max-w-[750px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={cfaone5}
+                            alt="located map image"
+                            className='max-w-[750px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                 </div>
             </div>

@@ -11,6 +11,8 @@ import dinein from '../../assets/dine-in.svg'
 import lovecommunity from '../../assets/lovecommunity.jpeg'
 import doordash from '../../assets/doordash.png'
 import cfaone3 from '../../assets/cfaone3.png'
+import LazyImage from '../LazyLoad/LazyLoad';
+import LazyBackground from '../LazyLoad/LazyBackground';
 
 const Community = () => {
 
@@ -40,17 +42,21 @@ const Community = () => {
 
   return (
     <>
-        <div className='background-image-community min-h-screen flex justify-center items-center'>
+        <LazyBackground src={('../../assets/community.jpg')} className='background-image-community min-h-screen flex justify-center items-center'>
             <div className='container text-center'>
-                <h1 className='text-8xl font-apercuBold mb-20 text-white '>We Love Our Community</h1>
+                <h1 className='text-8xl font-apercuBold mb-20 text-white'>We Love Our Community</h1>
             </div>
-        </div>
+        </LazyBackground>
         <div className='min-h-[620px] -mt-16 flex justify-center items-center py-12 sm:py-0'>
             <div className='container'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={lovecommunity} alt="cfa image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={lovecommunity}
+                            alt="cfa image"
+                            className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                     {/* Text content section */}
                     <div className='flex flex-col justify-center gap-6 sm:pt-0'>
@@ -290,7 +296,11 @@ const Community = () => {
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={cfaone3} alt="located map image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={cfaone3}
+                            alt="located map image"
+                            className='max-w-[450px] mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                 </div>
             </div>

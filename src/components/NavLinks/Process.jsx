@@ -8,6 +8,8 @@ import handbook from '../../assets/handbook.png'
 import conduct from '../../assets/conduct.svg'
 import welcome from '../../assets/welcome.jpeg'
 import cfaone2 from '../../assets/cfaone2.jpeg'
+import LazyImage from '../LazyLoad/LazyLoad';
+import LazyBackground from '../LazyLoad/LazyBackground';
 
 
 const Process = () => {
@@ -37,17 +39,21 @@ const Process = () => {
   return (
     <>
         {/* Background image section with centered text */}
-        <div className='background-image-process min-h-screen flex justify-center items-center'>
+        <LazyBackground src={('../../assets/steeplechase.jpg')} className='background-image-process min-h-screen flex justify-center items-center'>
             <div className='container text-center'>
                 <h1 className='text-8xl font-apercuBold mb-14 text-white'>Welcome To The Team</h1>
             </div>
-        </div>
+        </LazyBackground>
         {/* Subsequent content moved closer to the background section */}
         <div className='container -mt-20'> {/* Adjust negative margin to reduce gap */}
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 mt-18'>
                 {/* Image section */}
                 <div className='flex flex-col justify-center items-center mb-32'>
-                    <img src={welcome} alt="cfa image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                    <LazyImage
+                        src={welcome}
+                        alt="cfa image"
+                        className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                    />               
                 </div>
                 {/* Text content section */}
                 <div className='flex flex-col justify-center gap-6 mb-40 ml-10'>
@@ -191,7 +197,11 @@ const Process = () => {
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={cfaone2} alt="located map image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={cfaone2}
+                            alt="located map image"
+                            className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                 </div>
             </div>

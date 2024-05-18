@@ -4,6 +4,7 @@ import biscuit from '../assets/biscuit.jpeg'
 import cherryberry from '../assets/cherryberry.jpeg'
 import { Link } from 'react-router-dom';
 import boxlunch from '../assets/boxlunch.png'
+import LazyImage from './LazyLoad/LazyLoad';
 
 
 const HomeMid = () => {
@@ -22,7 +23,11 @@ const HomeMid = () => {
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={cherryberry} alt="located map image" className='max-w-[750px] w-full mx-auto rounded-lg shadow-strong '/>
+                        <LazyImage
+                            src={cherryberry}
+                            alt="located map image"
+                            className='max-w-[750px] w-full mx-auto rounded-lg shadow-strong'
+                        />
                     </div>
                 </div>
             </div>
@@ -32,7 +37,11 @@ const HomeMid = () => {
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={ServingImg} alt="cfa image" className='max-w-[750px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={ServingImg}
+                            alt="cfa image"
+                            className='max-w-[750px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                     {/* Text content section */}
                     <div className='flex flex-col justify-center gap-6 sm:pt-0 ml-10'>
@@ -59,21 +68,36 @@ const HomeMid = () => {
                 <div className='flex flex-col justify-center items-center w-full'>
                     <h1 className="text-5xl ml-8 font-apercuBold text-secondary mb-6 self-start">Something For Everyone:</h1>
                     <div className='flex items-center justify-center sm:justify-start gap-7'>
-                        {/* Each card is refactored below */}
+                        {/* Cards for This Section */}
                         <Link to="/more/cherry-berry" className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 transform-gpu' style={{ width: '346.66px', height: '517.78px' }}>
-                            <img src={cherryberry} alt="Paperwork" style={{ width: '380.66px', height: '280px' }} className='mb-4 -mt-4' />
+                            <LazyImage
+                                src={cherryberry}
+                                alt="Paperwork"
+                                style={{ width: '380.66px', height: '280px' }}
+                                className='mb-4 -mt-4'
+                            />
                             <p className='text-xl font-apercuBold text-center -mt-6'>Spring has sprung at Chick-fil-A! Dive into our refreshing new line of berry-licious beverages.</p>
                             <p className='font-apercuRegular mt-5'>Enjoy a taste of spring with Chick-fil-A's new seasonal berry drinks!</p>
                         </Link>
                         
                         <Link to="/more/catering-solutions" className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 transform-gpu' style={{ width: '346.66px', height: '517.78px' }}>
-                            <img src={boxlunch} alt="Job Descriptions" style={{ width: '380.66px', height: '280px' }} className='mb-4 -mt-4' />
+                            <LazyImage
+                                src={boxlunch}
+                                alt="Job Descriptions"
+                                style={{ width: '380.66px', height: '280px' }}
+                                className='mb-4 -mt-4'
+                            />
                             <p className='text-xl font-apercuBold text-center -mt-6'>The Perfect Spring Menu Made Easy: Catering Solutions for Busy Hosts</p>
                             <p className='font-apercuRegular mt-5'>Don't stress about spring gatherings! Chick-fil-A catering offers delicious options to fuel any get-together, big or small.</p>
                         </Link>
                         
                         <a href="https://www.chick-fil-a.com/menu/chick-fil-a-chicken-biscuit" className='flex flex-col items-center justify-start bg-white p-6 rounded-xl shadow-strong transition-all duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 transform-gpu' style={{ width: '346.66px', height: '517.78px' }}>
-                            <img src={biscuit} alt="Direct Deposit Form" style={{ width: '380.66px', height: '280px' }} className='mb-4 -mt-4' />
+                            <LazyImage
+                                src={biscuit}
+                                alt="Direct Deposit Form"
+                                style={{ width: '380.66px', height: '280px' }}
+                                className='mb-4 -mt-4'
+                            />
                             <p className='text-xl font-apercuBold text-center -mt-6'>Chicken Biscuit</p>
                             <p className='font-apercuRegular mt-5'>A hand-breaded, pressure-cooked chicken breast seasoned with a fiery spice blend, nestled on a toasted buttered bun with two pickles underneath.</p>
                         </a>

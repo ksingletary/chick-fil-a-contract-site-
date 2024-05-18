@@ -4,21 +4,27 @@ import recipes from '../../assets/recipes.png'
 import ingredients from '../../assets/ingredients.svg'
 import real from '../../assets/real.svg'
 import cfaone from '../../assets/cfaone.jpeg'
+import LazyImage from '../LazyLoad/LazyLoad'
+import LazyBackground from '../LazyLoad/LazyBackground'
 
 const Menu = () => {
   return (    
     <>
-        <div className='background-image-menu min-h-screen flex justify-center items-center'>
+        <LazyBackground src={('../../assets/menu.jpg')} className='background-image-menu min-h-screen flex justify-center items-center'>
             <div className='container text-center mb-10'>
-                <h1 className='text-7xl font-apercuBold mb-16 text-white '>Chick-fil-A Menu</h1>
+                <h1 className='text-7xl font-apercuBold mb-16 text-white'>Chick-fil-A Menu</h1>
             </div>
-        </div>
+        </LazyBackground>
         <div className='min-h-[620px] -mt-16 flex justify-center items-center py-12 sm:py-0'>
             <div className='container'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
                     {/* image section */}
                     <div className='flex justify-center items-center mb-28'>
-                        <img src={regular} alt="cfa image" className='max-w-[600px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={regular}
+                            alt="cfa image"
+                            className='max-w-[600px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                     {/* Text content section */}
                     <div className='flex flex-col justify-center gap-6 sm:pt-0 mb-28 ml-10'>
@@ -101,7 +107,11 @@ const Menu = () => {
                     </div>
                     {/* image section */}
                     <div className='flex justify-center items-center'>
-                        <img src={cfaone} alt="located map image" className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'/>
+                        <LazyImage
+                            src={cfaone}
+                            alt="located map image"
+                            className='max-w-[450px] w-full mx-auto shadow-1 rounded-lg shadow-strong'
+                        />
                     </div>
                 </div>
             </div>
