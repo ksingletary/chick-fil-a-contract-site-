@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import location from '../../assets/location.svg';
 import mobile from '../../assets/mobile.svg'
 import pickup from '../../assets/pickup.svg'
@@ -12,6 +12,32 @@ import LazyImage from '../LazyLoad/LazyLoad';
 import LazyBackground from '../LazyLoad/LazyBackground';
 
 const Contact = () => {
+    const INITIAL_FORM_DATA = {
+        firstName: "",
+        lastName: "",
+        phone_number: "",
+        email: "",
+        message: ""
+    }
+
+    const [formData, setFormData] = useState(INITIAL_FORM_DATA);
+
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+        setFormData(data => ({
+            ...data, 
+            [name]: value
+        }))
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const {firstName, lastName, phone_number, email, message} = formData;
+        alert("Thank you for contacting us!")        
+        console.log(`Form submitted: First Name: ${firstName} Last Name: ${lastName} Phone: ${phone_number} Email: ${email} Message: ${message}`);
+        setFormData(INITIAL_FORM_DATA)
+    };
+
   return (
     <>
         <LazyBackground src={('../../assets/contact.jpeg')} className='background-image-contact min-h-screen flex justify-center items-center'>
@@ -26,7 +52,7 @@ const Contact = () => {
                     And it would be our pleasure to return your message as quickly as possible.
                 </p>
                 <div className="bg-white shadow-strong ml-8 rounded-xl p-8" style={{ width: '1100px', height: '610px' }}> {/* Main container with fixed dimensions */}
-                    <form className="space-y-6 relative">
+                    <form onSubmit={handleSubmit} className="space-y-6 relative">
                         <div className="flex justify-between space-x-4">
                             <div className="w-full">
                                 <label className="block text-lg font-apercuMedium">
@@ -35,6 +61,9 @@ const Contact = () => {
                                 <input 
                                     type="text" 
                                     required 
+                                    name='firstName'
+                                    value={formData.firstName}
+                                    onChange={handleChange}
                                     className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md"
                                 />
                             </div>
@@ -45,6 +74,9 @@ const Contact = () => {
                                 <input 
                                     type="text" 
                                     required 
+                                    name='lastName'
+                                    value={formData.lastName}
+                                    onChange={handleChange}
                                     className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md"
                                 />
                             </div>
@@ -57,6 +89,9 @@ const Contact = () => {
                                 <input 
                                     type="tel" 
                                     required 
+                                    name='phone_number'
+                                    value={formData.phone_number}
+                                    onChange={handleChange}
                                     className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md"
                                 />
                             </div>
@@ -67,6 +102,9 @@ const Contact = () => {
                                 <input 
                                     type="email" 
                                     required 
+                                    name='email'
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md"
                                 />
                             </div>
@@ -91,11 +129,14 @@ const Contact = () => {
                             </label>
                             <textarea 
                                 required 
+                                name='message'
+                                value={formData.message}
+                                onChange={handleChange}
                                 className="block w-full p-2 border focus:outline-primary border-gray-300 rounded-md h-40 resize-none"
                             />
                         </div>
                         <div className="flex justify-center absolute -bottom-18 left-0">
-                            <button type="submit" className="bg-primary hover:bg-red-700 transition duration-500 hover:-translate-y-1 text-white text-lg font-apercuMedium py-4 px-6 rounded-full">
+                            <button onClick={handleSubmit} type="submit" className="bg-primary hover:bg-red-700 transition duration-500 hover:-translate-y-1 text-white text-lg font-apercuMedium py-4 px-6 rounded-full">
                                 Submit Message
                             </button>
                         </div>
