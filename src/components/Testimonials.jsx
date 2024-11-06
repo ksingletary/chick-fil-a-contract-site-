@@ -93,11 +93,11 @@ const Testimonials = () => {
 
     useEffect(() => {
         if (isModalOpen) {
-            // Disable scrolling on the body
+            // disable scrolling on the body
             document.body.style.overflow = 'hidden';
         }
         return () => {
-            // Re-enable scrolling when the component is unmounted or modal is closed
+            // re-enable scrolling
             document.body.style.overflow = 'unset';
         };
     }, [isModalOpen]);

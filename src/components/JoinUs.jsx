@@ -5,9 +5,8 @@ const JoinUs = () => {
     const backgroundImageStyle = {
         backgroundImage: `url(${joinus})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center top', // Aligns the background image to the center horizontally and shows more from the top
-        width: '100%',
-        height: '95vh',  // Adjusted height to fit the container
+        backgroundPosition: 'center top', 
+        height: '95vh',  
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'

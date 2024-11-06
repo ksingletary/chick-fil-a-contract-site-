@@ -35,7 +35,6 @@ const Navbar = () => {
         <>
             <nav className={`nav-transparent ${scrolled ? 'nav-scrolled' : ''}`}>
                 <div className='container max-w-7xl mx-auto px-4 py-3 flex justify-between items-center'>
-                    {/* Left side - Logo and Switch Stores button */}
                     <div className='flex items-center space-x-3 mt-0'>
                         <Link to="/" className='flex items-center'>
                             <img src={cfa} alt="logo" className={`logo ${scrolled ? 'small' : ''} hover:opacity-80`} />
@@ -46,7 +45,6 @@ const Navbar = () => {
                     </div>
 
                     <div className='hidden lg:flex w-full justify-between items-center text-md'>
-                        {/* Centered Links */}
                         <div className='flex flex-grow justify-center ml-72'>
                             <Link to="/process" className='text-white font-apercuRegular hover:text-primary mx-5'>Process</Link>
                             <Link to="/community" className='text-white font-apercuRegular hover:text-primary mx-5'>Community</Link>
